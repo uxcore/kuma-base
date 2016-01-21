@@ -1,0 +1,19 @@
+{
+  "name": "kuma-base",
+  "version": "1.0.0",
+  "description": "base for kuma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxcore/kuma-base.git"
+  },
+  "author": "vincent.bian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uxcore/kuma-base/issues"
+  },
+  "homepage": "https://github.com/uxcore/kuma-base#readme"
+}
