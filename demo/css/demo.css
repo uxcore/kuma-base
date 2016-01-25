@@ -1494,60 +1494,68 @@ th {
  * date  : 2016-01-22
 */
 .kuma-button {
+  padding: 0 10px;
   height: 32px;
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
+  font-size: 14px;
+  line-height: 32px;
 }
 .kuma-button-primary {
   background-color: #f37327;
   border-color: #f37327;
   color: #fff;
 }
+.kuma-button-primary:hover {
+  background-color: #f58949;
+  border-color: #f58949;
+}
+.kuma-button-primary:active {
+  background-color: #f26d1d;
+  border-color: #f26d1d;
+}
 .kuma-button-outline {
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: #f37327;
   color: #f37327;
 }
+.kuma-button-outline:hover {
+  background-color: #fef7f2;
+  border-color: #f58949;
+}
+.kuma-button-outline:active {
+  background-color: #fef0e8;
+  border-color: #f26d1d;
+}
 .kuma-button-secondary {
   background-color: #f2f2f2;
-  border-color: #d9d9d9;
+  border-color: #dbdbdb;
   color: #666;
 }
+.kuma-button-secondary:hover {
+  background-color: #ffffff;
+}
+.kuma-button-secondary:active {
+  background-color: #ededed;
+}
 .kuma-button-disabled {
-  background-color: #dfdfdf;
-  border-color: #d9d9d9;
+  background-color: #e8e8e8;
+  border-color: #dbdbdb;
   color: #ccc;
+  cursor: not-allowed;
 }
 .kuma-button-lg {
   height: 36px;
+  line-height: 36px;
 }
 .kuma-button-sm {
   height: 26px;
+  line-height: 26px;
 }
-.basic-200 {
-  color: #fafafa;
-}
-.basic-300 {
-  color: #f7f7f7;
-}
-.basic-400 {
-  color: #f2f2f2;
-}
-.basic-500 {
-  color: #f0f0f0;
-}
-.basic-600 {
-  color: #dfdfdf;
-}
-.basic-700 {
-  color: #d9d9d9;
-}
-.basic-800 {
-  color: #cccccc;
-}
-.basic-900 {
-  color: #c6c6c6;
+a.kuma-button {
+  display: inline-block;
+  text-decoration: none;
 }
 .grid-item {
   height: 400px;
