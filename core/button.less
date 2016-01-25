@@ -20,24 +20,26 @@
         color: @basic-100;
         
         &:hover {
-            background-color: lighten(@brand-primary, 5%);
-            border-color: lighten(@brand-primary, 5%);
+            background-color: lighten(@brand-primary, 7%);
+            border-color: lighten(@brand-primary, 7%);
         }
         &:active {
-            background-color: saturate(@brand-primary, 10%);
-            border-color: saturate(@brand-primary, 10%);
+            background-color: darken(@brand-primary, 2%);
+            border-color: darken(@brand-primary, 2%);
         }
     }
     &-outline {
-        background-color: @basic-100;
+        background-color: lighten(@brand-primary, 50%);
         border-color: @brand-primary;
         color: @brand-primary;
         
         &:hover {
-            background-color: lighten(@brand-primary, 40%);
+            background-color: lighten(@brand-primary, 42%);
+            border-color: lighten(@brand-primary, 7%);
         }
         &:active {
             background-color: lighten(@brand-primary, 40%);
+            border-color: darken(@brand-primary, 2%);
         }
     }
     &-secondary {
@@ -46,7 +48,10 @@
         color: @gray;
         
         &:hover {
-            
+            background-color: lighten(@basic-400, 50%);
+        }
+        &:active {
+            background-color: darken(@basic-400, 2%);
         }
     }
     &-disabled {
