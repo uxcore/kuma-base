@@ -312,9 +312,9 @@ input[type="search"]::-webkit-search-decoration {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
+  border: 0 none;
 }
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -351,6 +351,44 @@ table {
 td,
 th {
   padding: 0;
+}
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Hiragino Sans GB', \5b8b\4f53;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+ol li,
+ul li,
+dl li {
+  list-style: none;
+}
+a {
+  color: #3b8fd9;
+}
+a:hover {
+  color: #1a7bb8;
+}
+a:active {
+  color: #1a7bb8;
+}
+[tabindex="-1"]:focus {
+  outline: none !important;
 }
 .fn-clear {
   zoom: 1;
@@ -1503,10 +1541,12 @@ th {
 .kuma-button-primary:hover {
   background-color: #ff8a24;
   border-color: #ff8a24;
+  color: #fff;
 }
 .kuma-button-primary:active {
   background-color: #f57200;
   border-color: #f57200;
+  color: #fff;
 }
 .kuma-button-outline {
   background-color: #ffffff;
@@ -1516,10 +1556,12 @@ th {
 .kuma-button-outline:hover {
   background-color: #ffe9d6;
   border-color: #ff8a24;
+  color: #ff7700;
 }
 .kuma-button-outline:active {
   background-color: #ffe4cc;
   border-color: #f57200;
+  color: #ff7700;
 }
 .kuma-button-secondary {
   background-color: #f5f5f5;
@@ -1528,15 +1570,21 @@ th {
 }
 .kuma-button-secondary:hover {
   background-color: #ffffff;
+  color: #666;
 }
 .kuma-button-secondary:active {
   background-color: #f0f0f0;
+  color: #666;
 }
 .kuma-button-disabled {
   background-color: #e8e8e8;
   border-color: #dbdbdb;
   color: #ccc;
   cursor: not-allowed;
+}
+.kuma-button-disabled:hover,
+.kuma-button-disabled:active {
+  color: #ccc;
 }
 .kuma-button-lg {
   height: 36px;
