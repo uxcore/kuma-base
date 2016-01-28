@@ -53,11 +53,11 @@
 
 | 变量名 | 说明 |
 | --- | --- |
-｜ @link-color ｜ normal ｜
-｜ @link-hover-color ｜ hover ｜
-｜ @link-active-color ｜ click ｜
-｜ @link-visited-color ｜ visited ｜
-｜ @link-disabled-color ｜ disable ｜
+| @link-color | normal |
+| @link-hover-color | hover |
+| @link-active-color | click |
+| @link-visited-color | visited |
+| @link-disabled-color | disable |
 
 ##### 文本色
 
