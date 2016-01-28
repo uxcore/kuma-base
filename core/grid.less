@@ -2,7 +2,7 @@
 //
 // Generate semantic grid columns with these mixins.
 
-@import "grid-framework";
+@import "../mixins/grid-framework";
 
 // Centered container element
 .container-fixed(@gutter: @grid-gutter-width) {
@@ -133,14 +133,14 @@
 //
 // Set the container width, and override it for fixed navbars in media queries.
 
-.kuma-container-1000{
-  width:1000px;
-  margin:0 auto;
+.kuma-container-1000 {
+    margin: 0 auto;
+    width: 1000px;
 }
 
-.kuma-container-1180{
-  width:1180px;
-  margin:0 auto;
+.kuma-container-1180 {
+    margin: 0 auto;
+    width: 1180px;
 }
 
 .kuma-container {
@@ -164,7 +164,7 @@
 // width for fluid, full width layouts.
 
 .kuma-container-fluid {
-  .container-fixed();
+    .container-fixed();
 }
 
 
@@ -173,12 +173,12 @@
 // Rows contain and clear the floats of your columns.
 
 .kuma-row {
-  .make-row();
-  &:after, &:before {
-    display: table;
-    content: " ";
-    clear: both;
-  }
+    .make-row();
+    &:after, &:before {
+        display: table;
+        content: " ";
+        clear: both;
+    }
 }
 
 

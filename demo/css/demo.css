@@ -369,10 +369,6 @@ th {
 .fn-show {
   display: block;
 }
-.fn-left,
-.fn-right {
-  display: inline;
-}
 .fn-left {
   float: left;
 }
@@ -385,13 +381,13 @@ th {
   white-space: nowrap;
 }
 .fn-linear {
-  background: -webkit-linear-gradient(top, #fcfcfc, #f1f1f1);
-  background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
+  background: -webkit-linear-gradient(#fcfcfc, #f1f1f1);
+  background: linear-gradient(#fcfcfc, #f1f1f1);
 }
 /* 浅色的渐变 */
 .fn-linear-light {
-  background: -webkit-linear-gradient(top, #fcfcfc, #f9f9f9);
-  background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+  background: -webkit-linear-gradient(#fcfcfc, #f9f9f9);
+  background: linear-gradient(#fcfcfc, #f9f9f9);
 }
 /* 人民币符号 */
 .fn-rmb {
@@ -408,9 +404,6 @@ th {
 .fn-comment {
   color: #999;
 }
-.fn-img-circle {
-  border-radius: 50%;
-}
 .fn-border-box {
   box-sizing: border-box;
 }
@@ -424,12 +417,12 @@ th {
   box-sizing: inherit;
 }
 .kuma-container-1000 {
-  width: 1000px;
   margin: 0 auto;
+  width: 1000px;
 }
 .kuma-container-1180 {
-  width: 1180px;
   margin: 0 auto;
+  width: 1180px;
 }
 .kuma-container {
   margin-right: auto;
@@ -1503,33 +1496,33 @@ th {
   line-height: 32px;
 }
 .kuma-button-primary {
-  background-color: #f37327;
-  border-color: #f37327;
+  background-color: #ff7700;
+  border-color: #ff7700;
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #f58949;
-  border-color: #f58949;
+  background-color: #ff8a24;
+  border-color: #ff8a24;
 }
 .kuma-button-primary:active {
-  background-color: #f26d1d;
-  border-color: #f26d1d;
+  background-color: #f57200;
+  border-color: #f57200;
 }
 .kuma-button-outline {
   background-color: #ffffff;
-  border-color: #f37327;
-  color: #f37327;
+  border-color: #ff7700;
+  color: #ff7700;
 }
 .kuma-button-outline:hover {
-  background-color: #fef7f2;
-  border-color: #f58949;
+  background-color: #ffe9d6;
+  border-color: #ff8a24;
 }
 .kuma-button-outline:active {
-  background-color: #fef0e8;
-  border-color: #f26d1d;
+  background-color: #ffe4cc;
+  border-color: #f57200;
 }
 .kuma-button-secondary {
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
   border-color: #dbdbdb;
   color: #666;
 }
@@ -1537,7 +1530,7 @@ th {
   background-color: #ffffff;
 }
 .kuma-button-secondary:active {
-  background-color: #ededed;
+  background-color: #f0f0f0;
 }
 .kuma-button-disabled {
   background-color: #e8e8e8;
