@@ -837,6 +837,23 @@ a.kuma-button {
   display: inline-block;
   text-decoration: none;
 }
+.kuma-button-group {
+  display: inline-block;
+}
+.kuma-button-group .kuma-button {
+  float: left;
+}
+.kuma-button-group .kuma-button + .kuma-button {
+  margin-left: -1px;
+}
+.kuma-button-group .kuma-button:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.kuma-button-group .kuma-button:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .grid-item {
   height: 400px;
   background: #FFF9F5;

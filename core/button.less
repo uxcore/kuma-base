@@ -87,4 +87,22 @@
         display: inline-block;
         text-decoration: none;
     }
+    
+    &-group {
+        display: inline-block;
+        .kuma-button {
+            float: left;
+            & + .kuma-button {
+                margin-left: -1px;
+            }
+            &:not(:first-child) {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            &:not(:last-child) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
 }
