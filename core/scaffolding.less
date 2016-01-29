@@ -16,8 +16,9 @@ html {
  * Remove default margin.
  */
  
-body {
-    margin: 0;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
 }
 
 /* HTML5 display definitions
@@ -195,14 +196,6 @@ svg:not(:root) {
 
 /* Grouping content
    ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-
-figure {
-    margin: 1em 40px;
-}
 
 /**
  * Address differences between Firefox and other browsers.
@@ -417,27 +410,16 @@ table {
     border-spacing: 0;
 }
 
-td,
-th {
-    padding: 0;
-}
-
 // ------------------------------END-------------------//
 body {
     background-color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Hiragino Sans GB', ~'\5b8b\4f53';
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     color: @primary-text-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
 ol, ul, dl {
-    margin: 0;
-    padding: 0;
     li {
         list-style: none;
     }
