@@ -1,5 +1,7 @@
 # kuma-base
 
+## 概念
+
 ### COLORS
 
 > 品牌色、中立色、功能色为颜色的基础框架，UI设计中的任何颜色都要在此框架下产生，调色板中包含设计中的所有颜色。建议品牌色中基准色位于调色板中的中间位置，方便与向深浅两个方向拓展。
@@ -78,3 +80,13 @@
 | @border-dark | 深线 |
 | @border-normal | 常规线 |
 | @border-light | 浅线 |
+
+## 如何开发
+
+```sh
+git clone git@github.com:uxcore/kuma-base.git
+cd kuma-base
+npm install
+gulp
+```
+open [demo page](http://localhost:8083/demo.html)
