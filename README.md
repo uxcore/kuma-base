@@ -15,6 +15,9 @@
 | @brand-primary | 主品牌色 |
 | @brand-secondary | 子品牌色 |
 | @brand-assist | 辅品牌色 |
+| @brand-complement | 补色 | 
+| @brand-comosite | 复合 |
+| @brand-deep | 浓度 |
 
 #### 中立色
 
@@ -80,6 +83,10 @@
 | @border-dark | 深线 |
 | @border-normal | 常规线 |
 | @border-light | 浅线 |
+
+### 主题
+
+内置两款主题：`橙色系` 和 `蓝色系`
 
 ## 如何开发
 

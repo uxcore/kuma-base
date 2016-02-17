@@ -394,14 +394,16 @@ dl li {
 }
 a {
   color: #3b8fd9;
+  text-decoration: none;
 }
 a:hover {
   color: #1a7bb8;
+  text-decoration: underline;
 }
 a:active {
   color: #1a7bb8;
 }
-[tabindex="-1"]:focus {
+:focus {
   outline: none !important;
 }
 .fn-clear {
@@ -476,12 +478,15 @@ a:active {
   margin: 0 auto;
   width: 1180px;
 }
+.kuma-container-full {
+  width: 100%;
+}
 .kuma-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
-  width: 1000px;
+  width: 1180px;
 }
 .kuma-container-fluid {
   margin-right: auto;
@@ -773,34 +778,34 @@ a:active {
   box-sizing: border-box;
 }
 .kuma-button-primary {
-  background-color: #ff7700;
-  border-color: #ff7700;
+  background-color: #2599f2;
+  border-color: #2599f2;
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #ff8a24;
-  border-color: #ff8a24;
+  background-color: #47a9f4;
+  border-color: #47a9f4;
   color: #fff;
 }
 .kuma-button-primary:active {
-  background-color: #f57200;
-  border-color: #f57200;
+  background-color: #1b94f1;
+  border-color: #1b94f1;
   color: #fff;
 }
 .kuma-button-outline {
   background-color: #ffffff;
-  border-color: #ff7700;
-  color: #ff7700;
+  border-color: #2599f2;
+  color: #2599f2;
 }
 .kuma-button-outline:hover {
-  background-color: #ffe9d6;
-  border-color: #ff8a24;
-  color: #ff7700;
+  background-color: #eff8fe;
+  border-color: #47a9f4;
+  color: #2599f2;
 }
 .kuma-button-outline:active {
-  background-color: #ffe4cc;
-  border-color: #f57200;
-  color: #ff7700;
+  background-color: #e6f3fd;
+  border-color: #1b94f1;
+  color: #2599f2;
 }
 .kuma-button-secondary {
   background-color: #f5f5f5;
