@@ -70,8 +70,9 @@
 | --- | --- |
 | @primary-text-color | 主要文本 |
 | @seconary-text-color | 次要文本 |
-| @helper-text-color | 辅助文本 |
-| @disabled-text-color | 提示，禁用文本 |
+| @thirdary-text-color | 辅助文本 |
+| @helper-text-color | 提示，禁用文本 |
+| @ali-text-color | 阿里橙 (用于加强显示的文案或超链接)｜
 
 ### BORDER
 
