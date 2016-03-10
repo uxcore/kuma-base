@@ -453,7 +453,7 @@ a:active {
   color: #f60;
 }
 .fn-comment {
-  color: #ccc;
+  color: #c7c7c7;
 }
 .fn-border-box {
   box-sizing: border-box;
@@ -1743,38 +1743,38 @@ a:active {
   box-sizing: border-box;
 }
 .kuma-button-primary {
-  background-color: #2599f2;
-  border-color: #2599f2;
+  background-color: #4093d9;
+  border-color: #4093d9;
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #47a9f4;
-  border-color: #47a9f4;
+  background-color: #5ea4df;
+  border-color: #5ea4df;
   color: #fff;
 }
 .kuma-button-primary:active {
-  background-color: #1b94f1;
-  border-color: #1b94f1;
+  background-color: #378ed7;
+  border-color: #378ed7;
   color: #fff;
 }
 .kuma-button-outline {
   background-color: #ffffff;
-  border-color: #2599f2;
-  color: #2599f2;
+  border-color: #4093d9;
+  color: #4093d9;
 }
 .kuma-button-outline:hover {
-  background-color: #eff8fe;
-  border-color: #47a9f4;
-  color: #2599f2;
+  background-color: #f3f8fd;
+  border-color: #5ea4df;
+  color: #4093d9;
 }
 .kuma-button-outline:active {
-  background-color: #e6f3fd;
-  border-color: #1b94f1;
-  color: #2599f2;
+  background-color: #eaf3fb;
+  border-color: #378ed7;
+  color: #4093d9;
 }
 .kuma-button-secondary {
-  background-color: #f5f5f5;
-  border-color: #dbdbdb;
+  background-color: #ebebeb;
+  border-color: #c4c4c4;
   color: #666;
 }
 .kuma-button-secondary:hover {
@@ -1782,18 +1782,18 @@ a:active {
   color: #666;
 }
 .kuma-button-secondary:active {
-  background-color: #f0f0f0;
+  background-color: #e6e6e6;
   color: #666;
 }
 .kuma-button-disabled {
-  background-color: #e8e8e8;
-  border-color: #dbdbdb;
-  color: #ccc;
+  background-color: #dcdcdc;
+  border-color: #c4c4c4;
+  color: #c7c7c7;
   cursor: not-allowed;
 }
 .kuma-button-disabled:hover,
 .kuma-button-disabled:active {
-  color: #ccc;
+  color: #c7c7c7;
 }
 .kuma-button-lg {
   height: 36px;
@@ -1834,4 +1834,49 @@ a.kuma-button {
   line-height: 50px;
   text-align: center;
   margin: 5px 0;
+}
+.basic-100 {
+  width: 200px;
+  height: 20px;
+  background-color: #fff;
+}
+.basic-200 {
+  width: 200px;
+  height: 20px;
+  background-color: #f7f7f7;
+}
+.basic-300 {
+  width: 200px;
+  height: 20px;
+  background-color: #f2f2f2;
+}
+.basic-400 {
+  width: 200px;
+  height: 20px;
+  background-color: #ebebeb;
+}
+.basic-500 {
+  width: 200px;
+  height: 20px;
+  background-color: #e6e6e6;
+}
+.basic-600 {
+  width: 200px;
+  height: 20px;
+  background-color: #dcdcdc;
+}
+.basic-700 {
+  width: 200px;
+  height: 20px;
+  background-color: #c4c4c4;
+}
+.basic-800 {
+  width: 200px;
+  height: 20px;
+  background-color: #a1a1a1;
+}
+.basic-900 {
+  width: 200px;
+  height: 20px;
+  background-color: #111111;
 }
