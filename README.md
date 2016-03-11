@@ -14,7 +14,9 @@
 | --- | --- |
 | @brand-primary | 主品牌色 |
 | @brand-secondary | 子品牌色 |
-| @brand-assist | 辅品牌色 |
+| @brand-complement | 补色 | 
+| @brand-comosite | 复合 |
+| @brand-deep | 浓度 |
 
 #### 中立色
 
@@ -28,13 +30,12 @@
 | @basic-400 | |
 | @basic-500 | |
 | @basic-600 | |
-| @basic-700 | |
-| @basic-800 | |
-| @basic-900 | 深 |
+| @basic-700 | 深 |
 | @gray-dark | #333 |
 | @gray | #666 |
 | @gray-light | #999 |
 | @gray-lighter | #ccc |
+
 
 #### 功能色
 
