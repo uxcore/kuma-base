@@ -1,0 +1,43 @@
+
+.kuma-input {
+    padding: 5px 10px;
+    height: 30px;
+    line-height: 18px;
+}
+.kuma-textarea {
+    line-height: 20px;
+    padding: 7px 10px;
+    overflow: auto;
+    font-family: Arial;
+    resize: vertical;
+}
+
+.kuma-input, .kuma-textarea {
+    width: 100%;
+    border: 1px solid @input-border;
+    font-size: @font-size-small;
+    color: @input-color;
+    border-radius: @input-radius;
+    &[disabled], &:disabled {
+        border: 1px solid @input-border;
+        background: @input-bg-disabled;
+    }
+    &:hover {
+        border: 1px @input-border solid;
+    }
+    &:focus {
+        border: 1px @brand-primary solid;
+        color: @input-color;
+        outline: none;
+    }
+}
+
+.kuma-input-hover {
+    border: 1px @input-border solid;
+}
+
+.kuma-input-focus {
+    border: 1px @brand-primary solid;
+    color: @input-color;
+    outline: none;
+}
