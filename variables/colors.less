@@ -1,50 +1,66 @@
 // 品牌色
-@brand-primary:         #2599f2; // hsl(28, 100%, 50%)
-@brand-secondary:       #303233;
+@brand-primary:         #2599f2; // hsl(28, 100%, 50%) B2_1
+@brand-secondary:       #303233; // B2_3
 // 补色
-@brand-complement:      #00b3e8;
+@brand-complement:      #00b3e8; // B3_1
 // 复合 
-@brand-comosite:        #00c587;
+@brand-comosite:        #00c587; // B3_2
 // 浓度
-@brand-deep:            #73461d;
+@brand-deep:            #73461d; // B3_3
  
 
 // 功能色
-@brand-success:         #92b442;
-@brand-info:            #3b8fd9;
-@brand-warning:         #fc8200;
-@brand-danger:          #dd4530;
-// 功能色浅版
-@brand-success-light:   desaturate(@brand-success, 20%); // #ebf1dd
-@brand-info-light:      desaturate(@brand-info, 20%);    // #1a78b8
-@brand-warning-light:   desaturate(@brand-warning, 20%); // #fff6f0
-@brand-danger-light:    desaturate(@brand-danger, 20%);  // #ffeeef
+@brand-danger:          #F04631; // F1_1
+@brand-warning:         #f5a12a; // F2_1
+@brand-success:         #66bd5c; // F3_1
+@brand-info:            #45a8e6; // F4_1
+@brand-query:           #24bee8; // F5_1
+
+// 功能色浅版 在保持色相的情况下，饱和度调至 5%，色调调至 100%
+@brand-danger-light:    hsv(hsvhue(@brand-danger), 5%, 100%);  // F1_2
+@brand-warning-light:   hsv(hsvhue(@brand-warning), 5%, 100%); // F2_2
+@brand-success-light:   hsv(hsvhue(@brand-success), 5%, 100%); // F3_2
+@brand-info-light:      hsv(hsvhue(@brand-info), 5%, 100%); // F4_2
+@brand-query-light:     hsv(hsvhue(@brand-query), 5%, 100%);  // F5_2 
 
 // 主灰
-@gray-dark:              #333;
-@gray:                   #666;
-@gray-light:             #999;
-@gray-lighter:           #ccc;
+@gray-dark:              #333; // N2_4
+@gray:                   #666; // N2_3
+@gray-light:             #999; // N2_2
+@gray-lighter:           #ccc; // N2_1
 
 // 中立色
-@basic-100:               #fff;
-@basic-200:               darken(@basic-100, 2%);
-@basic-300:               darken(@basic-100, 3%);
-@basic-400:               darken(@basic-100, 4%);
-@basic-500:               darken(@basic-100, 7%);
-@basic-600:               darken(@basic-100, 9%);
-@basic-700:               darken(@basic-100, 14%);
+@basic-100:               #fff; // N1_1
+@basic-200:               darken(@basic-100, 2%); // N1_2
+@basic-300:               darken(@basic-100, 3%); // N1_3
+@basic-400:               darken(@basic-100, 4%); // N1_4
+@basic-500:               darken(@basic-100, 7%); // N1_5
+@basic-600:               darken(@basic-100, 9%); // N1_6
+@basic-700:               darken(@basic-100, 14%); // N1_7
 
-// link color.
-@link-color:            #3b8fd9;
-@link-hover-color:      #1a7bb8;
-@link-active-color:     @link-hover-color;
-@link-visited-color:    #73461d;
+// 链接色
+@link-color:            @brand-info; 
+@link-hover-color:      @brand-info-light;
+@link-active-color:     @brand-info-light;
+@link-visited-color:    @brand-deep;
 @link-disabled-color:   @gray-lighter;
 
+// 边框色
+@border-color:          @basic-700; // N1_7
+@border-hover-color:    @gray-lighter; // N2_1
+@border-disabled-color: @basic-600; // N1_6
+@border-danger-color:   @brand-danger; // F1_1
+
+// 背景色
+@bg-disabled-color:     @basic-300; // N1_3
+@bg-danger-color:        @brand-danger-light; // F1_2
+
 // 文本色
-@primary-text-color: @gray-dark;
-@seconary-text-color: @gray;
-@thirdary-text-color: @gray-light;
-@helper-text-color: @gray-lighter;
-@ali-text-color: #ec6c00;
+@text-primary-color:  @gray-dark; // N2_4
+@text-seconary-color: @gray; // N2_3
+@text-thirdary-color: @gray-light; // N2_2
+@text-helper-color:   @gray-lighter; // N2_1
+@text-danger-color:   @brand-danger; // F1_1
+@text-ali-color:      #ec6c00;
+
+ 

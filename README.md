@@ -68,22 +68,17 @@
 
 | 变量名 | 说明 |
 | --- | --- |
-| @primary-text-color | 主要文本 |
-| @seconary-text-color | 次要文本 |
-| @thirdary-text-color | 辅助文本 |
-| @helper-text-color | 提示，禁用文本 |
-| @ali-text-color | 阿里橙 (用于加强显示的文案或超链接)｜
+| @text-primary-color | 主要文本 |
+| @text-seconary-color | 次要文本 |
+| @text-thirdary-color | 辅助文本 |
+| @text-helper-color | 提示，禁用文本 |
+| @text-ali-color | 阿里橙 (用于加强显示的文案或超链接)｜
 
-### BORDER
+更多的颜色定义的变量请查看 variables/colors
 
-| 变量名 | 说明 |
-| --- | --- |
-| @border-brand | 品牌线 |
-| @border-warning | 警示线 |
-| @border-darker | 重线 |
-| @border-dark | 深线 |
-| @border-normal | 常规线 |
-| @border-light | 浅线 |
+### 关于上一个版本的 kuma 兼容
+
+老版本中的变量在新版本中保留，保存在 memories 目录下，开发人员在开发新的变量时，请注意核对是否冲突。
 
 ### 主题
 
