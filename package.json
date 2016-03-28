@@ -21,7 +21,8 @@
     "gulp-connect": "^2.3.1",
     "gulp-less": "^3.0.5",
     "less-plugin-autoprefix": "^1.5.1",
-    "less-plugin-glob": "^1.1.1"
+    "less-plugin-glob": "^1.1.1",
+    "less-plugin-inline-urls": "~1.1.0"
   },
   "dependencies": {
     "@ali/uxcore-primary-nav": "0.0.1"

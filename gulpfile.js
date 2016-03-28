@@ -3,15 +3,17 @@ var less = require('gulp-less');
 var connect = require('gulp-connect');
 
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
-var LessPluginGlob = require('less-plugin-glob');
+// var LessPluginGlob = require('less-plugin-glob');
+var LessPluginInlineUrls = require('less-plugin-inline-urls');
 var autoprefixPlugin = new LessPluginAutoPrefix({browsers: [
     '> 5%',
     'ie >= 8'
 ]});
 var lessDevConfig = {
     plugins: [
-        LessPluginGlob,
-        autoprefixPlugin
+        // LessPluginGlob,
+        autoprefixPlugin,
+        LessPluginInlineUrls
     ]
 };
 

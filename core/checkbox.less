@@ -1,0 +1,112 @@
+.kuma-checkbox + s {
+    display: none;
+}
+
+:root .kuma-checkbox {
+    display: none;
+}
+
+:root .kuma-checkbox + s {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+
+//单选按钮元素
+//====*** 默认蓝色背景
+.kuma-checkbox[type="radio"] + s,
+.kuma-checkbox.radio-primary[type="radio"] + s {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url("@{svg-path}/radio-normal.svg");
+    background-repeat: no-repeat;
+    &:hover {
+        background-image: url("@{svg-path}/radio-hover.svg");
+    }
+}
+
+.kuma-checkbox[type="radio"]:checked + s {
+    background-image: url("@{svg-path}/radio-checked.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox[type="radio"]:disabled + s {
+    background-image: url("@{svg-path}/radio-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox[type="radio"]:checked:disabled + s {
+    background-image: url("@{svg-path}/radio-checked-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+//====*** 灰色radio
+.kuma-checkbox.radio-primary[type="radio"] + s {
+    background-image: url("@{svg-path}/radio-normal.svg");
+    background-repeat: no-repeat;
+}
+.kuma-checkbox.radio-primary[type="radio"]:checked + s {
+    background-image: url("@{svg-path}/radio-checked.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox.radio-primary[type="radio"]:disabled + s {
+    background-image: url("@{svg-path}/radio-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox.radio-primary[type="radio"]:checked:disabled + s {
+    background-image: url("@{svg-path}/radio-checked-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+
+//复选框表单元素
+//====*** 默认蓝色背景
+.kuma-checkbox[type="checkbox"] + s,
+.kuma-checkbox.checkbox-primary[type="checkbox"] + s {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url("@{svg-path}/checkbox-normal.svg");
+    background-repeat: no-repeat;
+    &:hover {
+        background-image: url("@{svg-path}/checkbox-hover.svg")
+    }
+}
+
+.kuma-checkbox[type="checkbox"]:checked + s {
+    background-image: url("@{svg-path}/checkbox-checked.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox[type="checkbox"]:disabled + s {
+    background-image: url("@{svg-path}/checkbox-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox[type="checkbox"]:checked:disabled + s {
+    background-image: url("@{svg-path}/checkbox-checked-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+//====*** 灰色checkbox
+.kuma-checkbox.checkbox-primary[type="checkbox"] + s {
+    background-image: url("@{svg-path}/checkbox-normal.svg");
+    background-repeat: no-repeat;
+}
+.kuma-checkbox.checkbox-primary[type="checkbox"]:checked + s {
+    background-image: url("@{svg-path}/checkbox-checked.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox.checkbox-primary[type="checkbox"]:disabled + s {
+    background-image: url("@{svg-path}/checkbox-disabled.svg");
+    background-repeat: no-repeat;
+}
+
+.kuma-checkbox.checkbox-primary[type="checkbox"]:checked:disabled + s {
+    background-image: url("@{svg-path}/checkbox-checked-disabled.svg");
+    background-repeat: no-repeat;
+}
