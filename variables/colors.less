@@ -7,6 +7,14 @@
 @brand-comosite:        #00c587; // B3_2
 // 浓度
 @brand-deep:            #73461d; // B3_3
+
+// 品牌色变化
+// B2_1 (S+4 B-1)
+@brand-primary-dark: hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) + 4%), round(hsvvalue(@brand-primary) - 1%)); 
+// B2_1 (S-6 B+3)
+@brand-primary-light:  hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) - 6%), round(hsvvalue(@brand-primary) + 3%)); 
+// B2_1 (S-80 B+5)
+@brand-primary-lighter:  hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) - 80%), round(hsvvalue(@brand-primary) + 5%)); 
  
 
 // 功能色
