@@ -1,0 +1,114 @@
+.kuma-filter {
+    white-space: nowrap;
+    .kuma-filter-title {
+        display: inline-block;
+        line-height: 28px;
+        vertical-align: top;
+    }
+    .kuma-tag-pickable {
+        display: inline-block;
+        white-space: normal;
+    }
+}
+//==== 可选中筛选条件
+.kuma-tag-pickable {
+    .kuma-tag {
+        margin: 0 5px 5px 0;
+        padding: 0;
+        a {
+            position: relative;
+            display: block;
+            padding: 0 15px;
+            text-decoration: none;
+            color: @text-primary-color;
+        }
+        &:hover {
+            border-color: @brand-primary;
+            .kuma-icon {
+                color: #fff;
+            }
+        }
+        .kuma-checkmarkbg { //right bottom arrow
+            visibility: hidden;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px;
+            border-color: transparent @brand-primary @brand-primary transparent;
+        }
+        .kuma-checkmark {
+            visibility: hidden;
+            position: absolute;
+            right: -4px;
+            bottom: -10px;
+            cursor: pointer;
+            color: #fff;
+        }
+        &.picked {
+            border-color: @brand-primary;
+            .kuma-checkmarkbg, .kuma-checkmark {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.kuma-tag {
+    display: inline-block;
+    height: 28px;
+    padding: 0 15px;
+    line-height: 26px;
+    border: solid 1px @border-color;
+    border-radius: @global-border-radius;
+    box-sizing: border-box;
+    color: @text-secondary-color;
+    vertical-align: middle;
+    &-disabled {
+        background-color: @basic-400;
+        border-color: @basic-400;
+        color: @text-disabled-color;
+        cursor: not-allowed;
+    }
+    > .kuma-icon {
+        margin: 0 -8px;
+    }
+    .kuma-icon {
+        cursor: pointer;
+        color: @text-thirdary-color;
+    }
+    &:hover {
+        .kuma-icon {
+            color: @text-secondary-color;
+        }
+    }
+    &-group {
+        padding: 0;
+        font-size: 0;
+        .kuma-tag-left {
+            display: inline-block;
+            padding: 0 10px;
+            border-right: solid 1px @border-color;
+            font-size: 12px;
+        }
+        .kuma-tag-right {
+            display: inline-block;
+            padding: 0 4px;
+            color: @text-thirdary-color;
+            font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &-selectable {
+        cursor: pointer;
+        &.selected {
+            background-color: @brand-primary;
+            border-color: @brand-primary;
+            color: #fff;
+        }
+    }
+}

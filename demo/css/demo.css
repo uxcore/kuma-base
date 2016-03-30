@@ -1922,8 +1922,8 @@ a.kuma-button {
 .kuma-textarea[disabled],
 .kuma-input:disabled,
 .kuma-textarea:disabled {
-  border: 1px solid #e8e8e8;
-  background: #f7f7f7;
+  border: 1px solid #dbdbdb;
+  background: #e8e8e8;
 }
 .kuma-input:hover,
 .kuma-textarea:hover {
@@ -1984,6 +1984,115 @@ a:active {
 }
 a:disabled {
   color: #ccc;
+}
+.kuma-filter {
+  white-space: nowrap;
+}
+.kuma-filter .kuma-filter-title {
+  display: inline-block;
+  line-height: 28px;
+  vertical-align: top;
+}
+.kuma-filter .kuma-tag-pickable {
+  display: inline-block;
+  white-space: normal;
+}
+.kuma-tag-pickable .kuma-tag {
+  margin: 0 5px 5px 0;
+  padding: 0;
+}
+.kuma-tag-pickable .kuma-tag a {
+  position: relative;
+  display: block;
+  padding: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+.kuma-tag-pickable .kuma-tag:hover {
+  border-color: #2599f2;
+}
+.kuma-tag-pickable .kuma-tag:hover .kuma-icon {
+  color: #fff;
+}
+.kuma-tag-pickable .kuma-tag .kuma-checkmarkbg {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent #2599f2 #2599f2 transparent;
+}
+.kuma-tag-pickable .kuma-tag .kuma-checkmark {
+  visibility: hidden;
+  position: absolute;
+  right: -4px;
+  bottom: -10px;
+  cursor: pointer;
+  color: #fff;
+}
+.kuma-tag-pickable .kuma-tag.picked {
+  border-color: #2599f2;
+}
+.kuma-tag-pickable .kuma-tag.picked .kuma-checkmarkbg,
+.kuma-tag-pickable .kuma-tag.picked .kuma-checkmark {
+  visibility: visible;
+}
+.kuma-tag {
+  display: inline-block;
+  height: 28px;
+  padding: 0 15px;
+  line-height: 26px;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #666;
+  vertical-align: middle;
+}
+.kuma-tag-disabled {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+  color: #ccc;
+  cursor: not-allowed;
+}
+.kuma-tag > .kuma-icon {
+  margin: 0 -8px;
+}
+.kuma-tag .kuma-icon {
+  cursor: pointer;
+  color: #999;
+}
+.kuma-tag:hover .kuma-icon {
+  color: #666;
+}
+.kuma-tag-group {
+  padding: 0;
+  font-size: 0;
+}
+.kuma-tag-group .kuma-tag-left {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: solid 1px #dbdbdb;
+  font-size: 12px;
+}
+.kuma-tag-group .kuma-tag-right {
+  display: inline-block;
+  padding: 0 4px;
+  color: #999;
+  font-size: 12px;
+}
+.kuma-tag-group .kuma-tag-right:hover {
+  text-decoration: none;
+}
+.kuma-tag-selectable {
+  cursor: pointer;
+}
+.kuma-tag-selectable.selected {
+  background-color: #2599f2;
+  border-color: #2599f2;
+  color: #fff;
 }
 body {
   box-sizing: border-box;
