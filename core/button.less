@@ -58,13 +58,13 @@ a.kuma-button {
         color: @gray;
         
         &:hover {
-            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400) - 6%), round(hsvvalue(@basic-400)));
-            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400) + 4%), round(hsvvalue(@basic-400)));
+            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 6%));
+            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) + 4%));
             color: @gray;
         }
         &:active {
-            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400) - 6%), round(hsvvalue(@basic-400)));
-            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400) - 2%), round(hsvvalue(@basic-400)));
+            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 6%));
+            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 2%));
             color: @gray;
 
         }
