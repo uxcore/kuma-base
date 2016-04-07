@@ -472,7 +472,7 @@ a.kuma-button {
   text-decoration: none;
 }
 .kuma-button {
-  padding: 0 10px;
+  padding: 0 15px;
   height: 32px;
   border-width: 1px;
   border-style: solid;
@@ -537,10 +537,12 @@ a.kuma-button {
   color: #ccc;
 }
 .kuma-button-lg {
+  padding: 0 20px;
   height: 36px;
   line-height: 34px;
 }
 .kuma-button-sm {
+  padding: 0 12px;
   height: 26px;
   line-height: 24px;
 }
