@@ -1,6 +1,6 @@
 {
   "name": "kuma-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "base for kuma",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,5 @@
     "less-plugin-inline-urls": "~1.1.0"
   },
   "dependencies": {
-    "@ali/uxcore-primary-nav": "0.0.1"
   }
 }
