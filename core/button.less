@@ -25,6 +25,10 @@ a.kuma-button {
         border-color: @brand-primary;
         color: @basic-100;
         
+        &:visited {
+            color: @basic-100;
+        }
+        
         &:hover {
             background-color: @brand-primary-light;
             border-color: @brand-primary-light;
@@ -41,6 +45,10 @@ a.kuma-button {
         border-color: @brand-primary;
         color: @brand-primary;
         
+        &:visited {
+            color: @brand-primary;
+        }
+        
         &:hover {
             background-color: @brand-primary-lighter;
             border-color: @brand-primary-light;
@@ -56,6 +64,10 @@ a.kuma-button {
         background-color: @basic-400;
         border-color: @basic-700;
         color: @gray;
+        
+        &:visited {
+            color: @gray;
+        }
         
         &:hover {
             border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 6%));
@@ -75,6 +87,10 @@ a.kuma-button {
         color: @gray-lighter;
         
         cursor: not-allowed;
+        
+        &:visited {
+            color: @gray-lighter;
+        }
         
         &:hover, &:active {
             color: @gray-lighter;
