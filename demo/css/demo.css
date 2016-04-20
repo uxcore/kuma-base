@@ -475,40 +475,40 @@ a.kuma-button {
   box-sizing: border-box;
 }
 .kuma-button-primary {
-  background-color: #2599f2;
-  border-color: #2599f2;
+  background-color: #f37327;
+  border-color: #f37327;
   color: #fff;
 }
 .kuma-button-primary:visited {
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #34a4fa;
-  border-color: #34a4fa;
+  background-color: #fa7e37;
+  border-color: #fa7e37;
   color: #fff;
 }
 .kuma-button-primary:active {
-  background-color: #1a93f0;
-  border-color: #1a93f0;
+  background-color: #f06a1d;
+  border-color: #f06a1d;
   color: #fff;
 }
 .kuma-button-outline {
   background-color: #fff;
-  border-color: #2599f2;
-  color: #2599f2;
+  border-color: #f37327;
+  color: #f37327;
 }
 .kuma-button-outline:visited {
-  color: #2599f2;
+  color: #f37327;
 }
 .kuma-button-outline:hover {
-  background-color: #f2f9ff;
-  border-color: #34a4fa;
-  color: #2599f2;
+  background-color: #fff9f5;
+  border-color: #fa7e37;
+  color: #f37327;
 }
 .kuma-button-outline:active {
-  background-color: #e8f5ff;
-  border-color: #1a93f0;
-  color: #2599f2;
+  background-color: #fff2eb;
+  border-color: #f06a1d;
+  color: #f37327;
 }
 .kuma-button-secondary {
   background-color: #f5f5f5;
@@ -591,7 +591,7 @@ a.kuma-button {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .kuma-checkbox[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f90%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="radio"]:disabled + s {
@@ -607,7 +607,7 @@ a.kuma-button {
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f90%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"]:disabled + s {
@@ -2041,7 +2041,7 @@ a:disabled {
   color: #333;
 }
 .kuma-tag-pickable .kuma-tag:hover {
-  border-color: #2599f2;
+  border-color: #f37327;
 }
 .kuma-tag-pickable .kuma-tag:hover .kuma-icon {
   color: #fff;
@@ -2055,7 +2055,7 @@ a:disabled {
   height: 0;
   border-style: solid;
   border-width: 6px;
-  border-color: transparent #2599f2 #2599f2 transparent;
+  border-color: transparent #f37327 #f37327 transparent;
 }
 .kuma-tag-pickable .kuma-tag .kuma-checkmark {
   visibility: hidden;
@@ -2066,7 +2066,7 @@ a:disabled {
   color: #fff;
 }
 .kuma-tag-pickable .kuma-tag.picked {
-  border-color: #2599f2;
+  border-color: #f37327;
 }
 .kuma-tag-pickable .kuma-tag.picked .kuma-checkmarkbg,
 .kuma-tag-pickable .kuma-tag.picked .kuma-checkmark {
@@ -2122,8 +2122,8 @@ a:disabled {
   cursor: pointer;
 }
 .kuma-tag-selectable.selected {
-  background-color: #2599f2;
-  border-color: #2599f2;
+  background-color: #f37327;
+  border-color: #f37327;
   color: #fff;
 }
 body {
@@ -2156,16 +2156,16 @@ h2 {
   border-radius: 5px;
 }
 .color.B1_1 {
-  background: #2599f2;
+  background: #f37327;
 }
 .color.B1_1_D {
-  background: #1a93f0;
+  background: #f06a1d;
 }
 .color.B1_1_L {
-  background: #34a4fa;
+  background: #fa7e37;
 }
 .color.B1_1_LL {
-  background: #f2f9ff;
+  background: #fff9f5;
 }
 .color.B1_3 {
   background: #2c2f33;
