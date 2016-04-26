@@ -1,0 +1,30 @@
+.kuma-table {
+    thead {
+        th {
+            padding: 0 10px;
+            height: 50px;
+            background-color: @basic-400;
+            color: @text-primary-color;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+    tbody {
+        td {
+            padding: 0 10px;
+            height: 50px;
+            color: @text-secondary-color;
+        }
+        tr {
+            &:nth-child(2n + 1) {
+                background-color: @basic-100;
+            }
+            &:nth-child(2n) {
+                background-color: @basic-200;
+            }
+            &:hover {
+                background-color: hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) - 80%), round(hsvvalue(@brand-primary) + 5%));
+            }
+        }
+    }
+}
