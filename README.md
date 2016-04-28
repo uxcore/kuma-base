@@ -69,7 +69,7 @@
 | 变量名 | 说明 |
 | --- | --- |
 | @text-primary-color | 主要文本 |
-| @text-seconary-color | 次要文本 |
+| @text-secondary-color | 次要文本 |
 | @text-thirdary-color | 辅助文本 |
 | @text-helper-color | 提示，禁用文本 |
 | @text-ali-color | 阿里橙 (用于加强显示的文案或超链接)｜
@@ -92,4 +92,3 @@ cd kuma-base
 npm install
 gulp
 ```
-open [demo page](http://localhost:8083/demo.html)
