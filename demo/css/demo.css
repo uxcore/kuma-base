@@ -582,7 +582,6 @@ a.kuma-button {
 .kuma-checkbox.radio-primary[type="radio"] + s {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
@@ -622,7 +621,6 @@ a.kuma-button {
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
@@ -657,6 +655,22 @@ a.kuma-button {
 .kuma-checkbox.checkbox-primary[type="checkbox"]:checked:disabled + s {
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
+}
+.kuma-form-item {
+  margin-bottom: 20px;
+}
+.kuma-form-item .kuma-label {
+  float: left;
+}
+.kuma-form-item .controls {
+  margin-left: 110px;
+}
+.kuma-form-item .controls .kuma-form-text {
+  display: inline-block;
+  margin-top: 5px;
+}
+.kuma-form-item .controls .kuma-form-text .kuma-checkbox + s {
+  vertical-align: sub;
 }
 .kuma-container-1000 {
   margin: 0 auto;
@@ -1924,11 +1938,12 @@ a.kuma-button {
   border: 1px solid #dbdbdb;
   font-size: 12px;
   color: #333;
+  box-sizing: border-box;
 }
+.kuma-input[readonly],
+.kuma-textarea[readonly],
 .kuma-input[disabled],
-.kuma-textarea[disabled],
-.kuma-input:disabled,
-.kuma-textarea:disabled {
+.kuma-textarea[disabled] {
   border: 1px solid #dbdbdb;
   background: #e8e8e8;
 }
@@ -1952,11 +1967,22 @@ a.kuma-button {
   color: #333;
   outline: none;
 }
+.kuma-input {
+  padding: 5px 10px;
+  height: 36px;
+  line-height: 26px;
+}
+.kuma-textarea {
+  padding: 9px 10px;
+  line-height: 18px;
+  overflow: hidden;
+  resize: vertical;
+}
 .kuma-textarea.kuma-textarea-error,
 .kuma-input.kuma-input-error {
-  color: #F04631;
-  border: 1px #F04631 solid;
   background-color: #fff4f2;
+  border: 1px #F04631 solid;
+  color: #F04631;
 }
 .kuma-label {
   float: none;
