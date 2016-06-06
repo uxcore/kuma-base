@@ -1,5 +1,9 @@
 # history
 
+## 1.0.8
+`NEW` add more theme for ants co
+`CHANGED` change link's visited color
+
 ## 1.0.7
 `NEW` add partial checked svg
 
