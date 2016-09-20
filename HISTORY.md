@@ -1,5 +1,9 @@
 # history
 
+## 1.0.13
+
+`NEW` add core/svg-fill.less in order to support svg fill theme;
+
 ## 1.0.12
 
 `CHANGED` move table.less/form.less from uxcore-kuma to kuma-base/uxcore.less
