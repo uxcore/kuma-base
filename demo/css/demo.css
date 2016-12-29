@@ -473,6 +473,8 @@ a.kuma-button {
   font-size: 14px;
   line-height: 30px;
   box-sizing: border-box;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
 }
 .kuma-button-primary {
   background-color: #f37327;
@@ -535,10 +537,14 @@ a.kuma-button {
   cursor: not-allowed;
 }
 .kuma-button-disabled:visited {
+  background-color: #e8e8e8;
+  border-color: #dbdbdb;
   color: #ccc;
 }
 .kuma-button-disabled:hover,
 .kuma-button-disabled:active {
+  background-color: #e8e8e8;
+  border-color: #dbdbdb;
   color: #ccc;
 }
 .kuma-button-lg {
@@ -550,6 +556,7 @@ a.kuma-button {
   padding: 0 12px;
   height: 26px;
   line-height: 24px;
+  font-size: 12px;
 }
 .kuma-button-group {
   display: inline-block;
@@ -2007,7 +2014,7 @@ a {
   color: #3B8FD9;
 }
 a:visited {
-  color: #73461d;
+  color: #3B8FD9;
 }
 a:hover {
   color: #1A78B8;
@@ -2018,13 +2025,20 @@ a:active {
 a:disabled {
   color: #ccc;
 }
+a.weak-link {
+  color: #333;
+  text-decoration: underline;
+}
+a.weaker-link {
+  color: #333;
+}
 /* kuma.loading 样式模块 */
 /*small*/
 .kuma-loading-s {
   width: 24px;
   height: 24px;
   background: url('https://aliwork.alicdn.com/tps/TB1NR2TMXXXXXX9XVXXXXXXXXXX-24-12.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 /*middle*/
@@ -2032,7 +2046,7 @@ a:disabled {
   width: 36px;
   height: 36px;
   background: url('https://aliwork.alicdn.com/tps/TB1BjnZMXXXXXa7XFXXXXXXXXXX-36-18.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 /*large*/
@@ -2040,7 +2054,7 @@ a:disabled {
   width: 48px;
   height: 48px;
   background: url('https://aliwork.alicdn.com/tps/TB1LV66MXXXXXbQXpXXXXXXXXXX-48-24.gif') center no-repeat;
-  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg');
+  background-image: url('https://aliwork.alicdn.com/tps/TB1fPYRMXXXXXcdXFXXXXXXXXXX-480-238.svg'), none;
   background-size: contain;
 }
 .kuma-table thead th {
@@ -2173,6 +2187,153 @@ a:disabled {
   background-color: #f37327;
   border-color: #f37327;
   color: #fff;
+}
+.text-primary-color {
+  color: #333;
+}
+.text-secondary-color {
+  color: #666;
+}
+.text-thirdary-color {
+  color: #999;
+}
+.text-disabled-color {
+  color: #ccc;
+}
+.text-helper-color {
+  color: #ccc;
+}
+.text-danger-color {
+  color: #F04631;
+}
+.text-ali-color {
+  color: #ec6c00;
+}
+.text-warning-color {
+  color: #f5a12a;
+}
+.text-success-color {
+  color: #66bd5c;
+}
+.text-info-color {
+  color: #45a8e6;
+}
+.text-query-color {
+  color: #24bee8;
+}
+.border-primary-color {
+  border-color: #f37327;
+}
+.border-secondary-color {
+  border-color: #2c2f33;
+}
+.border-primary-dark-color {
+  border-color: #f06a1d;
+}
+.border-primary-light-color {
+  border-color: #fa7e37;
+}
+.border-primary-lighter-color {
+  border-color: #fff9f5;
+}
+.border-danger-color {
+  border-color: #F04631;
+}
+.border-warning-color {
+  border-color: #f5a12a;
+}
+.border-success-color {
+  border-color: #66bd5c;
+}
+.border-info-color {
+  border-color: #45a8e6;
+}
+.border-query-color {
+  border-color: #24bee8;
+}
+.border-color {
+  border-color: #dbdbdb;
+}
+.border-hover-color {
+  border-color: #ccc;
+}
+.border-focus-color {
+  border-color: #ccc;
+}
+.border-disabled-color {
+  border-color: #dbdbdb;
+}
+.border-danger-color {
+  border-color: #F04631;
+}
+.bg-primary-color {
+  background-color: #f37327;
+}
+.bg-secondary-color {
+  background-color: #2c2f33;
+}
+.bg-primary-dark-color {
+  background-color: #f06a1d;
+}
+.bg-primary-light-color {
+  background-color: #fa7e37;
+}
+.bg-primary-lighter-color {
+  background-color: #fff9f5;
+}
+.bg-danger-color {
+  background-color: #F04631;
+}
+.bg-warning-color {
+  background-color: #f5a12a;
+}
+.bg-success-color {
+  background-color: #66bd5c;
+}
+.bg-info-color {
+  background-color: #45a8e6;
+}
+.bg-query-color {
+  background-color: #24bee8;
+}
+.svg-primary-fill {
+  fill: #f37327;
+}
+.svg-secondary-fill {
+  fill: #2c2f33;
+}
+.svg-primary-dark-fill {
+  fill: #f06a1d;
+}
+.svg-primary-light-fill {
+  fill: #fa7e37;
+}
+.svg-primary-lighter-fill {
+  fill: #fff9f5;
+}
+.svg-white-fill {
+  fill: #fff;
+}
+.svg-gray-fill {
+  fill: #666;
+}
+.svg-gray-lighter-fill {
+  fill: #ccc;
+}
+.svg-danger-fill {
+  fill: #F04631;
+}
+.svg-warning-fill {
+  fill: #f5a12a;
+}
+.svg-success-fill {
+  fill: #66bd5c;
+}
+.svg-info-fill {
+  fill: #45a8e6;
+}
+.svg-query-fill {
+  fill: #24bee8;
 }
 body {
   box-sizing: border-box;

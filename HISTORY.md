@@ -1,5 +1,9 @@
 # history
 
+## 1.0.14
+
+`NEW` add transition in button
+
 ## 1.0.13
 
 `NEW` add core/svg-fill.less in order to support svg fill theme;
