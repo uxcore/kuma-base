@@ -2335,6 +2335,14 @@ a.weaker-link {
 .svg-query-fill {
   fill: #24bee8;
 }
+.kuma-transition {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.kuma-transition-all * {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
 body {
   box-sizing: border-box;
 }
@@ -2498,4 +2506,15 @@ h2 {
   width: 200px;
   height: 20px;
   background-color: #dbdbdb;
+}
+.transition-demo {
+  color: #f37327;
+  line-height: 30px;
+  display: inline-block;
+  padding: 0 20px;
+  border: 1px solid #f37327;
+}
+.transition-demo:hover {
+  color: white;
+  background: #f37327;
 }

@@ -1,9 +1,11 @@
 {
   "name": "kuma-base",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "base for kuma",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uxcore/kuma-base.git"

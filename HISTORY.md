@@ -1,5 +1,9 @@
 # history
 
+## 1.0.15
+
+`NEW` add transition.less to provide global transition config.
+
 ## 1.0.14
 
 `NEW` add transition in button
