@@ -1,5 +1,10 @@
 # history
 
+## 1.0.16
+
+`CHANGED` global font.
+
+
 ## 1.0.15
 
 `NEW` add transition.less to provide global transition config.
