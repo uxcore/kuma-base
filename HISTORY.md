@@ -1,5 +1,9 @@
 # history
 
+## 1.0.16
+
+`NEW` change transition ease
+
 ## 1.0.15
 
 `NEW` add transition.less to provide global transition config.
