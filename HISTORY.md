@@ -1,8 +1,12 @@
 # history
 
+## 1.0.17
+
+`CHANGED` change transition ease
+
 ## 1.0.16
 
-`NEW` change transition ease
+`CHANGED` global font.
 
 ## 1.0.15
 
