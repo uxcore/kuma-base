@@ -1,5 +1,11 @@
 # history
 
+## 1.1.0
+
+* `CHANGED` make templates script for theme
+* `CHANGED` add `checkbox-partial-checked-disabled.svg`
+* `CHANGED` checkbox & radio style change
+
 ## 1.0.17
 
 `CHANGED` change transition ease

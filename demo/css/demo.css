@@ -374,7 +374,7 @@ table {
 }
 body {
   background-color: #fff;
-  font: 12px/1.5 tahoma, arial, 'PingFang SC', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', \5b8b\4f53, sans-serif;
+  font: 12px/1.5 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
   color: #333;
 }
 ol li,
@@ -473,44 +473,44 @@ a.kuma-button {
   font-size: 14px;
   line-height: 30px;
   box-sizing: border-box;
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+  -webkit-transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: color 0.3s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1), border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-button-primary {
-  background-color: #f37327;
-  border-color: #f37327;
+  background-color: #2eb6a9;
+  border-color: #2eb6a9;
   color: #fff;
 }
 .kuma-button-primary:visited {
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #fa7e37;
-  border-color: #fa7e37;
+  background-color: #3abdb0;
+  border-color: #3abdb0;
   color: #fff;
 }
 .kuma-button-primary:active {
-  background-color: #f06a1d;
-  border-color: #f06a1d;
+  background-color: #25b3a4;
+  border-color: #25b3a4;
   color: #fff;
 }
 .kuma-button-outline {
   background-color: #fff;
-  border-color: #f37327;
-  color: #f37327;
+  border-color: #2eb6a9;
+  color: #2eb6a9;
 }
 .kuma-button-outline:visited {
-  color: #f37327;
+  color: #2eb6a9;
 }
 .kuma-button-outline:hover {
-  background-color: #fff9f5;
-  border-color: #fa7e37;
-  color: #f37327;
+  background-color: #cbc2c3;
+  border-color: #3abdb0;
+  color: #2eb6a9;
 }
 .kuma-button-outline:active {
-  background-color: #fff2eb;
-  border-color: #f06a1d;
-  color: #f37327;
+  background-color: #c4c2c2;
+  border-color: #25b3a4;
+  color: #2eb6a9;
 }
 .kuma-button-secondary {
   background-color: #f5f5f5;
@@ -589,79 +589,93 @@ a.kuma-button {
 .kuma-checkbox.radio-primary[type="radio"] + s {
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.20)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="radio"] + s:hover,
 .kuma-checkbox.radio-primary[type="radio"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%200.7)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 }
 .kuma-checkbox[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke-width%3D%221%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="radio"]:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="radio"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23999%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22rgba(0%2C0%2C0%2C0.20)%22%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"] + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.20)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23f37327%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23fff%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke-width%3D%221%22%2F%3E%0A%09%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"]:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.radio-primary[type="radio"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22%23999%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%227%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%228%22%20cy%3D%228%22%20r%3D%224%22%20fill%3D%22rgba(0%2C0%2C0%2C0.20)%22%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="checkbox"] + s,
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
   width: 16px;
   height: 16px;
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="checkbox"] + s:hover,
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s:hover {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%200.7)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
 }
 .kuma-checkbox[type="checkbox"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="checkbox"]:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox[type="checkbox"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.15)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"] + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22transparent%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"]:checked + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23fff%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222px%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%09%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23f37327%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"]:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
 }
 .kuma-checkbox.checkbox-primary[type="checkbox"]:checked:disabled + s {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%23e8e8e8%22%20stroke%3D%22%23999%22%20stroke-width%3D%222px%22%20%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%222.5%22%20stroke-opacity%3D%220.6%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%20%20%3Cpolyline%20points%3D%223.5%208%2C6.5%2011%2C12%204.5%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%09%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cpolyline%20points%3D%225%209%2C7.5%2011%2C12%205.5%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.15)%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20fill%3D%22transparent%22%2F%3E%0A%3C%2Fsvg%3E%0A");
   background-repeat: no-repeat;
+}
+.kuma-checkbox-partial,
+.kuma-checkbox-partial-disabled {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-repeat: no-repeat;
+}
+.kuma-checkbox-partial {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke%3D%22rgba(46%2C%20182%2C%20169%2C%201)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+.kuma-checkbox-partial-disabled {
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%3E%0A%20%20%20%20%3Crect%20x%3D%221%22%20y%3D%221%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22rgba(0%2C0%2C0%2C0.02)%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.10)%22%20stroke-width%3D%221px%22%20rx%3D%223%22%20ry%3D%223%22%20%2F%3E%0A%09%3Cline%20x1%3D%223%22%20y1%3D%228%22%20x2%3D%2213%22%20y2%3D%228%22%20stroke-width%3D%222%22%20stroke%3D%22rgba(0%2C0%2C0%2C0.15)%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 .kuma-form-item {
   margin-bottom: 20px;
@@ -2077,7 +2091,7 @@ a.weaker-link {
   background-color: #fafafa;
 }
 .kuma-table tbody tr:hover {
-  background-color: #fff9f5;
+  background-color: #cbc2c3;
 }
 .kuma-filter {
   white-space: nowrap;
@@ -2103,7 +2117,7 @@ a.weaker-link {
   color: #333;
 }
 .kuma-tag-pickable .kuma-tag:hover {
-  border-color: #f37327;
+  border-color: #2eb6a9;
 }
 .kuma-tag-pickable .kuma-tag:hover .kuma-icon {
   color: #fff;
@@ -2117,7 +2131,7 @@ a.weaker-link {
   height: 0;
   border-style: solid;
   border-width: 6px;
-  border-color: transparent #f37327 #f37327 transparent;
+  border-color: transparent #2eb6a9 #2eb6a9 transparent;
 }
 .kuma-tag-pickable .kuma-tag .kuma-checkmark {
   visibility: hidden;
@@ -2128,7 +2142,7 @@ a.weaker-link {
   color: #fff;
 }
 .kuma-tag-pickable .kuma-tag.picked {
-  border-color: #f37327;
+  border-color: #2eb6a9;
 }
 .kuma-tag-pickable .kuma-tag.picked .kuma-checkmarkbg,
 .kuma-tag-pickable .kuma-tag.picked .kuma-checkmark {
@@ -2184,8 +2198,8 @@ a.weaker-link {
   cursor: pointer;
 }
 .kuma-tag-selectable.selected {
-  background-color: #f37327;
-  border-color: #f37327;
+  background-color: #2eb6a9;
+  border-color: #2eb6a9;
   color: #fff;
 }
 .text-primary-color {
@@ -2222,19 +2236,19 @@ a.weaker-link {
   color: #24bee8;
 }
 .border-primary-color {
-  border-color: #f37327;
+  border-color: #2eb6a9;
 }
 .border-secondary-color {
   border-color: #2c2f33;
 }
 .border-primary-dark-color {
-  border-color: #f06a1d;
+  border-color: #25b3a4;
 }
 .border-primary-light-color {
-  border-color: #fa7e37;
+  border-color: #3abdb0;
 }
 .border-primary-lighter-color {
-  border-color: #fff9f5;
+  border-color: #cbc2c3;
 }
 .border-danger-color {
   border-color: #F04631;
@@ -2267,19 +2281,19 @@ a.weaker-link {
   border-color: #F04631;
 }
 .bg-primary-color {
-  background-color: #f37327;
+  background-color: #2eb6a9;
 }
 .bg-secondary-color {
   background-color: #2c2f33;
 }
 .bg-primary-dark-color {
-  background-color: #f06a1d;
+  background-color: #25b3a4;
 }
 .bg-primary-light-color {
-  background-color: #fa7e37;
+  background-color: #3abdb0;
 }
 .bg-primary-lighter-color {
-  background-color: #fff9f5;
+  background-color: #cbc2c3;
 }
 .bg-danger-color {
   background-color: #F04631;
@@ -2297,19 +2311,19 @@ a.weaker-link {
   background-color: #24bee8;
 }
 .svg-primary-fill {
-  fill: #f37327;
+  fill: #2eb6a9;
 }
 .svg-secondary-fill {
   fill: #2c2f33;
 }
 .svg-primary-dark-fill {
-  fill: #f06a1d;
+  fill: #25b3a4;
 }
 .svg-primary-light-fill {
-  fill: #fa7e37;
+  fill: #3abdb0;
 }
 .svg-primary-lighter-fill {
-  fill: #fff9f5;
+  fill: #cbc2c3;
 }
 .svg-white-fill {
   fill: #fff;
@@ -2336,12 +2350,12 @@ a.weaker-link {
   fill: #24bee8;
 }
 .kuma-transition {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-transition-all * {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 body {
   box-sizing: border-box;
@@ -2373,16 +2387,16 @@ h2 {
   border-radius: 5px;
 }
 .color.B1_1 {
-  background: #f37327;
+  background: #2eb6a9;
 }
 .color.B1_1_D {
-  background: #f06a1d;
+  background: #25b3a4;
 }
 .color.B1_1_L {
-  background: #fa7e37;
+  background: #3abdb0;
 }
 .color.B1_1_LL {
-  background: #fff9f5;
+  background: #cbc2c3;
 }
 .color.B1_3 {
   background: #2c2f33;
@@ -2508,13 +2522,13 @@ h2 {
   background-color: #dbdbdb;
 }
 .transition-demo {
-  color: #f37327;
+  color: #2eb6a9;
   line-height: 30px;
   display: inline-block;
   padding: 0 20px;
-  border: 1px solid #f37327;
+  border: 1px solid #2eb6a9;
 }
 .transition-demo:hover {
   color: white;
-  background: #f37327;
+  background: #2eb6a9;
 }

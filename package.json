@@ -1,10 +1,11 @@
 {
   "name": "kuma-base",
-  "version": "1.0.17",
+  "version": "1.1.0",
   "description": "base for kuma",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "pub": "gulp makefiles & npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "gulp-connect": "^2.3.1",
     "gulp-ejs": "^3.0.0",
     "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
     "less-plugin-autoprefix": "^1.5.1",
     "less-plugin-glob": "^1.1.1",
     "less-plugin-inline-urls": "~1.1.0"
