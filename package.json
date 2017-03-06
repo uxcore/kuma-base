@@ -1,6 +1,6 @@
 {
   "name": "kuma-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "base for kuma",
   "main": "index.js",
   "scripts": {
