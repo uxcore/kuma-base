@@ -1,5 +1,11 @@
 # history
 
+## 1.2.0
+
+* `CHANGED` new basic color defination (brand-color/functional-color/normal-color)
+* `CHANGED` button size & color change
+* `CHANGED` input color change
+
 ## 1.1.0
 
 * `CHANGED` make templates script for theme

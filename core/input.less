@@ -1,8 +1,9 @@
 .kuma-input, .kuma-textarea {
     width: 100%;
     border: 1px solid @border-color;
+    border-radius: @global-border-radius;
     font-size: 12px;
-    color: @text-primary-color;
+    color: @dark-2;
     box-sizing: border-box;
     &[readonly], &[disabled] {
         border: 1px solid @border-disabled-color;
@@ -10,6 +11,9 @@
     }
     &:hover {
         border: 1px @border-hover-color solid;
+    }
+    &:hover[readonly], &:hover[disabled] {
+        border: 1px solid @border-disabled-color;
     }
     &:focus {
         border: 1px @border-hover-color solid;

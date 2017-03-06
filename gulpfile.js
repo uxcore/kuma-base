@@ -1,18 +1,19 @@
-var gulp = require('gulp');
-var less = require('gulp-less');
-var connect = require('gulp-connect');
-var ejs = require('gulp-ejs');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const less = require('gulp-less');
+const connect = require('gulp-connect');
+const ejs = require('gulp-ejs');
+const rename = require('gulp-rename');
+const assign = require('object-assign');
 
-var LessPluginAutoPrefix = require('less-plugin-autoprefix');
-var LessPluginInlineUrls = require('less-plugin-inline-urls');
-var autoprefixPlugin = new LessPluginAutoPrefix({
+const LessPluginAutoPrefix = require('less-plugin-autoprefix');
+const LessPluginInlineUrls = require('less-plugin-inline-urls');
+const autoprefixPlugin = new LessPluginAutoPrefix({
   browsers: [
     '> 5%',
     'ie >= 8'
   ]
 });
-var lessDevConfig = {
+const lessDevConfig = {
   plugins: [
     // LessPluginGlob,
     autoprefixPlugin,
@@ -20,62 +21,70 @@ var lessDevConfig = {
   ]
 };
 
-var themes = [
+const prevHue = 'hsvhue(@brand-primary)';
+const prevSat = 'hsvsaturation(@brand-primary)'
+const prevValue = 'hsvvalue(@brand-primary)';
+const prevColors = {
+  brandPrimary: 'rgba(243, 115, 39, 1)',
+  brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat} - 10%), round(${prevValue}))`,
+  brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat} + 10%), round(${prevValue}))`,
+}
+
+const themes = [
   {
-    name: 'alipay',
-    color: {
-      brandPrimary: 'rgba(0, 164, 230, 1)',
-      brandPrimaryLightAlpha: 'rgba(0, 164, 230, 0.7)',
-    },
-  },
-  {
-    name: 'ant_financial',
-    color: {
-      brandPrimary: 'rgba(0, 160, 232, 1)',
-      brandPrimaryLightAlpha: 'rgba(0, 160, 232, 0.7)',
-    },
-  },
-  {
-    name: 'ants_daq',
-    color: {
-      brandPrimary: 'rgba(0, 160, 232, 1)',
-      brandPrimaryLightAlpha: 'rgba(0, 160, 232, 0.7)',
-    },
+    name: 'orange',
+    color: prevColors,
   },
   {
     name: 'blue',
-    color: {
+    color: assign({}, prevColors, {
       brandPrimary: 'rgba(37, 153, 242, 1)',
-      brandPrimaryLightAlpha: 'rgba(37, 153, 242, 0.7)',
-    },
+      brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 8%))`,
+    }),
+  },
+  {
+    name: 'green',
+    color: assign({}, prevColors, {
+      brandPrimary: 'rgba(64, 179, 112, 1)',
+      brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} + 5%))`,
+      brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 5%))`,
+    })
+  },
+  {
+    name: 'alipay',
+    color: assign({}, prevColors, {
+      brandPrimary: 'rgba(0, 164, 230, 1)',
+    }),
+  },
+  {
+    name: 'ant_financial',
+    color: assign({}, prevColors, {
+      brandPrimary: 'rgba(0, 160, 232, 1)',
+    }),
+  },
+  {
+    name: 'ants_daq',
+    color: assign({}, prevColors, {
+      brandPrimary: 'rgba(0, 160, 232, 1)',
+    }),
   },
   {
     name: 'koubei',
-    color: {
+    color: assign({}, prevColors, {
       brandPrimary: 'rgba(226, 71, 14, 1)',
-      brandPrimaryLightAlpha: 'rgba(226, 71, 14, 0.7)',
-    },
+    }),
   },
   {
     name: 'mybank',
-    color: {
+    color: assign({}, prevColors, {
       brandPrimary: 'rgba(0, 163, 171, 1)',
-      brandPrimaryLightAlpha: 'rgba(0, 163, 171, 0.7)',
-    },
-  },
-  {
-    name: 'orange',
-    color: {
-      brandPrimary: 'rgba(243, 115, 39, 1)',
-      brandPrimaryLightAlpha: 'rgba(243, 115, 39, 0.7)',
-    },
+    }),
   },
   {
     name: 'zhima_credit',
-    color: {
+    color: assign({}, prevColors, {
       brandPrimary: 'rgba(46, 182, 169, 1)',
-      brandPrimaryLightAlpha: 'rgba(46, 182, 169, 0.7)',
-    },
+    }),
   },
 ]
 

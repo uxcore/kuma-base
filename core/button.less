@@ -10,13 +10,13 @@ a.kuma-button {
 }
 
 .kuma-button {
-    padding: 0 15px;
-    height: 32px;
+    padding: 0 24px;
+    height: 36px;
     border-width: 1px;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: @global-border-radius;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 34px;
     box-sizing: border-box;
     transition: color @transition-duration @transition-ease, background-color @transition-duration @transition-ease, border-color @transition-duration @transition-ease;
     
@@ -32,13 +32,13 @@ a.kuma-button {
         }
         
         &:hover {
-            background-color: @brand-primary-light;
-            border-color: @brand-primary-light;
+            background-color: @brand-primary-hover;
+            border-color: @brand-primary-hover;
             color: @basic-100;
         }
         &:active {
-            background-color: @brand-primary-dark;
-            border-color: @brand-primary-dark;
+            background-color: @brand-primary-focus;
+            border-color: @brand-primary-focus;
             color: @basic-100;
         }
     }
@@ -52,52 +52,52 @@ a.kuma-button {
         }
         
         &:hover {
-            background-color: @brand-primary-lighter;
-            border-color: @brand-primary-light;
+            background-color: @brand-primary-light-alpha;
+            border-color: @brand-primary;
             color: @brand-primary;
         }
         &:active {
-            background-color: hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) - 76%), round(hsvvalue(@brand-primary) + 5%));
+            background-color: @brand-primary-lighter-alpha;
             border-color: @brand-primary-dark;
             color: @brand-primary;
         }
     }
     &-secondary {
-        background-color: @basic-400;
-        border-color: @basic-700;
-        color: @gray;
+        background-color: white;
+        border-color: @normal-7;
+        color: @normal-1;
         
         &:visited {
             color: @gray;
         }
         
         &:hover {
-            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 6%));
-            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) + 4%));
-            color: @gray;
+            border-color: @normal-2;
+            background-color: @normal-6;
+            color: @normal-8;
         }
         &:active {
-            border-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 6%));
-            background-color: hsv(round(hsvhue(@basic-400)), round(hsvsaturation(@basic-400)), round(hsvvalue(@basic-400) - 2%));
-            color: @gray;
+            border-color: @normal-1;
+            background-color: @normal-5;
+            color: @normal-8;
 
         }
     }
     &-disabled {
-        background-color: @basic-600;
-        border-color:@basic-700;
-        color: @gray-lighter;
+        background-color: @normal-6;
+        border-color: @normal-3;
+        color: @normal-7;
         
         cursor: not-allowed;
-        
+
         &:visited {
-        	background-color: @basic-600;
+        	background-color: @normal-6;
         	border-color:@basic-700;
             color: @gray-lighter;
         }
         
         &:hover, &:active {
-        	background-color: @basic-600;
+        	background-color: @normal-6;
         	border-color:@basic-700;
             color: @gray-lighter;
         }
@@ -105,14 +105,14 @@ a.kuma-button {
     
     // size
     &-lg {
-        padding: 0 20px;
-        height: 36px;
-        line-height: 34px;
+        padding: 0 24px;
+        height: 44px;
+        line-height: 42px;
     }
     &-sm {
-        padding: 0 12px;
-        height: 26px;
-        line-height: 24px;
+        padding: 0 16px;
+        height: 28px;
+        line-height: 26px;
         font-size: 12px;
     }
     
