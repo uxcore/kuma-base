@@ -1,5 +1,10 @@
 # history
 
+
+## 1.2.1
+
+* `FIXED` input readonly/disabled text color
+
 ## 1.2.0
 
 * `CHANGED` new basic color defination (brand-color/functional-color/normal-color)
