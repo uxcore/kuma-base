@@ -1,5 +1,9 @@
 # history
 
+## 1.2.3
+
+* `CHANGED` basic color defination has been modified
+
 
 ## 1.2.1
 
