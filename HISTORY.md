@@ -1,5 +1,9 @@
 # history
 
+## 1.2.5
+
+* `CHANGED` change base shadow
+
 ## 1.2.4
 
 * `CHANGED` basic color defination has been modified
