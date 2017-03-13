@@ -3,7 +3,7 @@
     border: 1px solid @border-color;
     border-radius: @global-border-radius;
     font-size: 12px;
-    color: @dark-2;
+    color: @dark-alpha-2;
     box-sizing: border-box;
     &[readonly], &[disabled] {
         border: 1px solid @border-disabled-color;
@@ -20,6 +20,10 @@
         border: 1px @border-hover-color solid;
         color: @text-primary-color;
         outline: none;
+    }
+    &:focus[readonly], &:focus[disabled] {
+        border: 1px solid @border-disabled-color;
+        color: @text-disabled-color;
     }
     &.kuma-input-hover {
         border: 1px @border-hover-color solid;
