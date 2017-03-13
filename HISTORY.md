@@ -1,6 +1,6 @@
 # history
 
-## 1.2.3
+## 1.2.4
 
 * `CHANGED` basic color defination has been modified
 
