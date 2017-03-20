@@ -1,4 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
-	<rect x="1" y="1" width="14" height="14" fill="rgba(0, 160, 232, 1)" stroke="rgba(0, 160, 232, 1)" stroke-width="1px" rx="3" ry="3" />
+	<rect x="1" y="1" width="14" height="14" fill="#00a0e8" stroke="#00a0e8" stroke-width="1px" rx="3" ry="3" />
 	<polyline points="5 9,7.5 11,12 5.5" stroke="white" stroke-width="2" stroke-linecap="square" fill="transparent"/>
 </svg>

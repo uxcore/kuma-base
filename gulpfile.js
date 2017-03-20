@@ -25,7 +25,7 @@ const prevHue = 'hsvhue(@brand-primary)';
 const prevSat = 'hsvsaturation(@brand-primary)'
 const prevValue = 'hsvvalue(@brand-primary)';
 const prevColors = {
-  brandPrimary: 'rgba(243, 115, 39, 1)',
+  brandPrimary: 'rgb(243, 115, 39)',
   brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat} - 10%), round(${prevValue}))`,
   brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat} + 10%), round(${prevValue}))`,
 }
@@ -38,14 +38,14 @@ const themes = [
   {
     name: 'blue',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(37, 153, 242, 1)',
+      brandPrimary: '#2599f2',
       brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 8%))`,
     }),
   },
   {
     name: 'green',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(64, 179, 112, 1)',
+      brandPrimary: '#40b370',
       brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} + 5%))`,
       brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 5%))`,
     })
@@ -53,37 +53,37 @@ const themes = [
   {
     name: 'alipay',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(0, 164, 230, 1)',
+      brandPrimary: '#00a0e8',
     }),
   },
   {
     name: 'ant_financial',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(0, 160, 232, 1)',
+      brandPrimary: '#00a0e8',
     }),
   },
   {
     name: 'ants_daq',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(0, 160, 232, 1)',
+      brandPrimary: '#00a0e8',
     }),
   },
   {
     name: 'koubei',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(226, 71, 14, 1)',
+      brandPrimary: '#e2470e',
     }),
   },
   {
     name: 'mybank',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(0, 163, 171, 1)',
+      brandPrimary: '#00a3ab',
     }),
   },
   {
     name: 'zhima_credit',
     color: assign({}, prevColors, {
-      brandPrimary: 'rgba(46, 182, 169, 1)',
+      brandPrimary: '#2eb6a9',
     }),
   },
 ]

@@ -1,5 +1,9 @@
 # history
 
+## 1.3.0
+
+* `NEW` add logo svg
+
 ## 1.2.5
 
 * `CHANGED` change base shadow
