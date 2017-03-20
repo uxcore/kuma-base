@@ -25,7 +25,7 @@ const prevHue = 'hsvhue(@brand-primary)';
 const prevSat = 'hsvsaturation(@brand-primary)'
 const prevValue = 'hsvvalue(@brand-primary)';
 const prevColors = {
-  brandPrimary: 'rgb(243, 115, 39)',
+  brandPrimary: '#f37327',
   brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat} - 10%), round(${prevValue}))`,
   brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat} + 10%), round(${prevValue}))`,
 }
