@@ -1,5 +1,9 @@
 # history
 
+## 1.3.4
+
+* `CHANGED` remove error text color
+
 ## 1.3.3
 
 * `FIXED` fix input focus border color

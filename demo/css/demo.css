@@ -2027,7 +2027,6 @@ a.kuma-button {
 .kuma-input.kuma-input-error {
   background-color: rgba(240, 70, 48, 0.06);
   border: 1px #F04631 solid;
-  color: #F04631;
 }
 .kuma-label {
   float: none;
