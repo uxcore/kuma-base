@@ -1,5 +1,10 @@
 # history
 
+## 1.3.3
+
+* `FIXED` fix input focus border color
+* `CHANGED` add input placeholder color
+
 ## 1.3.0
 
 * `NEW` add logo svg

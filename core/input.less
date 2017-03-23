@@ -17,7 +17,7 @@
         border: 1px solid @border-disabled-color;
     }
     &:focus {
-        border: 1px @border-hover-color solid;
+        border: 1px @border-focus-color solid;
         color: @text-primary-color;
         outline: none;
     }
@@ -30,9 +30,12 @@
     }
 
     &.kuma-input-focus {
-        border: 1px @border-hover-color solid;
+        border: 1px @border-focus-color solid;
         color: @text-primary-color;
         outline: none;
+    }
+    &::placeholder {
+        color: @normal-alpha-4;
     }
 }
 .kuma-input {
