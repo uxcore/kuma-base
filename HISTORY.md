@@ -1,5 +1,10 @@
 # history
 
+
+## 1.3.6
+
+* `FIXED` button color  
+
 ## 1.3.5
 
 * `CHANGED` add 3 new color `F2-1-7` / `F3-1-7` / `F4-1-7`

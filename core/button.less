@@ -52,34 +52,33 @@ a.kuma-button {
         }
         
         &:hover {
-            background-color: @brand-primary-alpha-6;
-            border-color: @brand-primary;
-            color: @brand-primary;
+            background-color: @brand-primary-alpha-8;
+            border-color: @brand-primary-hover;
+            color: @brand-primary-hover;
         }
         &:active {
             background-color: @brand-primary-alpha-7;
-            border-color: @brand-primary-dark;
-            color: @brand-primary;
+            border-color: @brand-primary-focus;
+            color: @brand-primary-focus;
         }
     }
     &-secondary {
-        background-color: white;
+        background-color: @white-alpha-1;
         border-color: @normal-alpha-5;
-        color: @normal-alpha-3;
+        color: @normal-alpha-2;
         
         &:visited {
             color: @gray;
         }
         
         &:hover {
-            border-color: @normal-alpha-4;
-            background-color: @normal-alpha-9;
-            color: @normal-alpha-2;
-        }
-        &:active {
             border-color: @normal-alpha-3;
             background-color: @normal-alpha-8;
-            color: @normal-alpha-2;
+        }
+        &:active {
+            border-color: @normal-alpha-1;
+            background-color: @normal-alpha-7;
+            color: @normal-alpha-1;
 
         }
     }
@@ -92,14 +91,12 @@ a.kuma-button {
 
         &:visited {
         	background-color: @normal-alpha-9;
-        	border-color:@basic-700;
-            color: @gray-lighter;
+        	border-color: @normal-alpha-6;
         }
         
         &:hover, &:active {
         	background-color: @normal-alpha-9;
-        	border-color:@basic-700;
-            color: @gray-lighter;
+        	border-color: @normal-alpha-6;
         }
     }
     
