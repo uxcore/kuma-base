@@ -1,6 +1,10 @@
 # history
 
 
+## 1.3.8
+
+* `FIXED` change button default font size
+
 ## 1.3.6
 
 * `FIXED` button color  

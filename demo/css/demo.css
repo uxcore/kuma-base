@@ -548,6 +548,7 @@ a.kuma-button {
   padding: 0 24px;
   height: 44px;
   line-height: 42px;
+  font-size: 18px;
 }
 .kuma-button-sm {
   padding: 0 16px;
