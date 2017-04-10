@@ -1,6 +1,14 @@
 # history
 
 
+## 1.3.10
+
+* `FIXED` wrong checkbox/radio normal border color
+
+## 1.3.9
+
+* `CHANGED` radio/checkbox hover border color changes
+
 ## 1.3.8
 
 * `FIXED` change button default font size
