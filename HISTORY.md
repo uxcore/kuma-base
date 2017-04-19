@@ -1,6 +1,10 @@
 # history
 
 
+## 1.3.11
+
+* `FIXED` wrong input focus color
+
 ## 1.3.10
 
 * `FIXED` wrong checkbox/radio normal border color
