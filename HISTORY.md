@@ -1,6 +1,10 @@
 # history
 
 
+## 1.3.12
+
+* `CHANGED` input & textarea padding change
+
 ## 1.3.11
 
 * `FIXED` wrong input focus color

@@ -2009,12 +2009,12 @@ a.kuma-button {
   color: rgba(31, 56, 88, 0.4);
 }
 .kuma-input {
-  padding: 5px 10px;
+  padding: 5px 12px;
   height: 36px;
   line-height: 26px;
 }
 .kuma-textarea {
-  padding: 9px 10px;
+  padding: 8px 12px;
   line-height: 18px;
   overflow: hidden;
   resize: vertical;
