@@ -1,6 +1,10 @@
 # history
 
 
+## 1.4.0
+
+* `CHANGED` change button size & add ghost/white type
+
 ## 1.3.12
 
 * `CHANGED` input & textarea padding change
