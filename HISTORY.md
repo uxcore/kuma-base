@@ -1,5 +1,8 @@
 # history
 
+## 1.4.1
+
+* `CHANGED` add new color D-5, D-6, D-7, D-8, D-9
 
 ## 1.4.0
 
