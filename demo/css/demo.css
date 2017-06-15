@@ -470,7 +470,6 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .kuma-button {
   padding: 0 16px;
-  margin: 0 4px;
   height: 32px;
   border-width: 1px;
   border-style: solid;
@@ -577,14 +576,12 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .kuma-button-lg {
   padding: 0 20px;
-  margin: 0 8px;
   height: 36px;
   line-height: 34px;
   font-size: 18px;
 }
 .kuma-button-sm {
   padding: 0 12px;
-  margin: 0 4px;
   height: 28px;
   line-height: 26px;
   font-size: 12px;
