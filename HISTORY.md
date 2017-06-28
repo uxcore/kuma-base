@@ -1,5 +1,11 @@
 # history
 
+## 1.5.1
+
+* `CHANGED` use non-alpha color for border-color to fix latest chrome render bug [#8](https://github.com/uxcore/kuma-base/issues/8)
+
+* `FIXED` disabled outline button color
+
 ## 1.5.0
 
 * `CHANGED` remove button margin
