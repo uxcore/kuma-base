@@ -1,5 +1,9 @@
 # history
 
+## 1.5.3
+
+* `FIXED`  button font-size
+
 ## 1.5.1
 
 * `CHANGED` use non-alpha color for border-color to fix latest chrome render bug [#8](https://github.com/uxcore/kuma-base/issues/8)

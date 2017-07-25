@@ -474,7 +474,7 @@ a.kuma-button.kuma-button-disabled:visited {
   border-width: 1px;
   border-style: solid;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 30px;
   box-sizing: border-box;
   -webkit-transition: all 0.3s ease;
@@ -576,13 +576,13 @@ a.kuma-button.kuma-button-disabled:visited {
   color: rgba(255, 255, 255, 0.3);
 }
 .kuma-button-lg {
-  padding: 0 20px;
+  padding: 0 16px;
   height: 36px;
   line-height: 34px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .kuma-button-sm {
-  padding: 0 12px;
+  padding: 0 8px;
   height: 28px;
   line-height: 26px;
   font-size: 12px;
@@ -1993,39 +1993,39 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-textarea[readonly],
 .kuma-input[disabled],
 .kuma-textarea[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
   background: rgba(31, 56, 88, 0.04);
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input:hover,
 .kuma-textarea:hover {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px #A3AEBD solid;
 }
 .kuma-input:hover[readonly],
 .kuma-textarea:hover[readonly],
 .kuma-input:hover[disabled],
 .kuma-textarea:hover[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
 }
 .kuma-input:focus,
 .kuma-textarea:focus {
-  border: 1px rgba(31, 56, 88, 0.6) solid;
+  border: 1px #77879C solid;
   outline: none;
 }
 .kuma-input:focus[readonly],
 .kuma-textarea:focus[readonly],
 .kuma-input:focus[disabled],
 .kuma-textarea:focus[disabled] {
-  border: 1px solid rgba(31, 56, 88, 0.2);
+  border: 1px solid #D1D7DE;
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input.kuma-input-hover,
 .kuma-textarea.kuma-input-hover {
-  border: 1px rgba(31, 56, 88, 0.4) solid;
+  border: 1px #A3AEBD solid;
 }
 .kuma-input.kuma-input-focus,
 .kuma-textarea.kuma-input-focus {
-  border: 1px rgba(31, 56, 88, 0.6) solid;
+  border: 1px #77879C solid;
   outline: none;
 }
 .kuma-input::-webkit-input-placeholder,
@@ -2320,13 +2320,13 @@ a.weaker-link {
   border-color: #BAC3CC;
 }
 .border-hover-color {
-  border-color: rgba(31, 56, 88, 0.4);
+  border-color: #A3AEBD;
 }
 .border-focus-color {
-  border-color: rgba(31, 56, 88, 0.6);
+  border-color: #77879C;
 }
 .border-disabled-color {
-  border-color: rgba(31, 56, 88, 0.2);
+  border-color: #D1D7DE;
 }
 .border-danger-color {
   border-color: #F04631;
