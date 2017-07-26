@@ -1,5 +1,9 @@
 # history
 
+## 1.5.4
+
+* `FIXED` aliwork theme color logo
+
 ## 1.5.3
 
 * `FIXED`  button font-size
