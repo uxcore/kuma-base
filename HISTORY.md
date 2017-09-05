@@ -1,5 +1,9 @@
 # history
 
+## 1.5.6
+
+* `FIXED` set input placeholder color important to prevent being overrided in IE10/11
+
 ## 1.5.4
 
 * `FIXED` aliwork theme color logo

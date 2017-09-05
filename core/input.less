@@ -33,7 +33,8 @@
         outline: none;
     }
     &::placeholder {
-        color: @normal-alpha-4;
+        // placeholder color will be overrided by color in IE10/11
+        color: @normal-alpha-4!important;
     }
 }
 .kuma-input {
