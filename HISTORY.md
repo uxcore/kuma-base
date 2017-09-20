@@ -1,5 +1,9 @@
 # history
 
+## 1.6.0
+
+* `CHANGED` add middle & small size input
+
 ## 1.5.6
 
 * `FIXED` set input placeholder color important to prevent being overrided in IE10/11

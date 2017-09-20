@@ -2043,7 +2043,13 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-input {
   padding: 5px 12px;
   height: 36px;
-  line-height: 26px;
+  line-height: 18px;
+}
+.kuma-input-middle-size {
+  height: 32px;
+}
+.kuma-input-small-size {
+  height: 28px;
 }
 .kuma-textarea {
   padding: 8px 12px;
