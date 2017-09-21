@@ -1,5 +1,9 @@
 # history
 
+## 1.7.0
+
+* `CHANGED` add size variables
+
 ## 1.6.0
 
 * `CHANGED` add middle & small size input
