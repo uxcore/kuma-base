@@ -1,5 +1,9 @@
 # history
 
+## 1.7.2
+
+* `FIXED` duplicated input definition 
+
 ## 1.7.0
 
 * `CHANGED` add size variables
