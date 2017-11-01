@@ -37,24 +37,52 @@
 
 // ======= 过时的配置，为了向前兼容 =====
 
+.function {
+  .getr(@RGB_background, @RGBA_color) {
+    return: (1 - alpha(@RGBA_color)) * red(@RGB_background) + alpha(@RGBA_color) * red(@RGBA_color);
+  }
+  .getg(@RGB_background, @RGBA_color) {
+    return: (1 - alpha(@RGBA_color)) * green(@RGB_background) + alpha(@RGBA_color) * green(@RGBA_color);
+  }
+  .getb(@RGB_background, @RGBA_color) {
+    return: (1 - alpha(@RGBA_color)) * blue(@RGB_background) + alpha(@RGBA_color) * blue(@RGBA_color);
+  }
+  .rgba2rgb(@RGB_background, @RGBA_color) {
+    return: rgb(getr(@RGB_background, @RGBA_color), getg(@RGB_background, @RGBA_color), getb(@RGB_background, @RGBA_color));
+  }
+}
+
 // 品牌色
 // B1
 @brand-primary:         #498EE6; 
-// B2
-@brand-primary-hover:   hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary) - 10%), round(hsvvalue(@brand-primary))); 
-// B3
-@brand-primary-focus:   hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary) - 8%)); 
-// B4 (B-10)
-@brand-primary-dark-new:    hsv(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary) - 10%));
+// B2 (10% white)
+@brand-primary-hover: rgba2rgb(@brand-primary, rgba(255, 255, 255, 0.10));
+// B3 (5% black)
+@brand-primary-focus: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.05));
+// B4 (10% black)
+@brand-primary-dark-new: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.10));
+// B5 (20% black)
+@brand-primary-dark-5: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.20));
+// B6 (40% black)
+@brand-primary-dark-6: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.40));
+// B7 (55% black)
+@brand-primary-dark-7: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.55));
+// B1-2 (A80)
+@brand-primary-alpha-2: fadeout(@brand-primary, 20%);
 // B1-3 (A60)
-@brand-primary-alpha-3: hsva(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary)), 0.6);
+@brand-primary-alpha-3: fadeout(@brand-primary, 40%);
+// B1-4 (A40)
+@brand-primary-alpha-4: fadeout(@brand-primary, 60%);
+// B1-5 (A30)
+@brand-primary-alpha-5: fadeout(@brand-primary, 70%);
 // B1-6 (A20)
-@brand-primary-alpha-6: hsva(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary)), 0.2); 
+@brand-primary-alpha-6: fadeout(@brand-primary, 80%);
 // B1-7 (A10)
-@brand-primary-alpha-7:   hsva(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary)), 0.1); 
+@brand-primary-alpha-7: fadeout(@brand-primary, 90%);
 // B1-8 (A6)
-@brand-primary-alpha-8:   hsva(round(hsvhue(@brand-primary)), round(hsvsaturation(@brand-primary)), round(hsvvalue(@brand-primary)), 0.06); 
-
+@brand-primary-alpha-8: fadeout(@brand-primary, 94%);
+// B1-9 (A4)
+@brand-primary-alpha-9: fadeout(@brand-primary, 96%); 
 
 // 主灰
 @gray-dark:              #333; // N2_4

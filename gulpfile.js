@@ -7,6 +7,7 @@ const assign = require('object-assign');
 
 const LessPluginAutoPrefix = require('less-plugin-autoprefix');
 const LessPluginInlineUrls = require('less-plugin-inline-urls');
+const LessPluginFunctions = require('less-plugin-functions');
 const autoprefixPlugin = new LessPluginAutoPrefix({
   browsers: [
     '> 5%',
@@ -17,7 +18,8 @@ const lessDevConfig = {
   plugins: [
     // LessPluginGlob,
     autoprefixPlugin,
-    LessPluginInlineUrls
+    LessPluginInlineUrls,
+    new LessPluginFunctions(),
   ]
 };
 
@@ -26,8 +28,6 @@ const prevSat = 'hsvsaturation(@brand-primary)'
 const prevValue = 'hsvvalue(@brand-primary)';
 const prevColors = {
   brandPrimary: '#f37327',
-  brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat} - 10%), round(${prevValue}))`,
-  brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat} + 10%), round(${prevValue}))`,
 }
 
 const themes = [
@@ -38,16 +38,13 @@ const themes = [
   {
     name: 'blue',
     color: assign({}, prevColors, {
-      brandPrimary: '#2599f2',
-      brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 8%))`,
+      brandPrimary: '#498EE6',
     }),
   },
   {
     name: 'green',
     color: assign({}, prevColors, {
       brandPrimary: '#40b370',
-      brandPrimaryHover: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} + 5%))`,
-      brandPrimaryFocus: `hsv(round(${prevHue}), round(${prevSat}), round(${prevValue} - 5%))`,
     })
   },
   {

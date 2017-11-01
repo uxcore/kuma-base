@@ -489,13 +489,13 @@ a.kuma-button.kuma-button-disabled:visited {
   color: #fff;
 }
 .kuma-button-primary:hover {
-  background-color: #f2813f;
-  border-color: #f2813f;
+  background-color: #f4813d;
+  border-color: #f4813d;
   color: #fff;
 }
 .kuma-button-primary:active {
-  background-color: #f2620f;
-  border-color: #f2620f;
+  background-color: #e76d25;
+  border-color: #e76d25;
   color: #fff;
 }
 .kuma-button-outline {
@@ -507,14 +507,14 @@ a.kuma-button.kuma-button-disabled:visited {
   color: #f37327;
 }
 .kuma-button-outline:hover {
-  background-color: rgba(242, 113, 39, 0.06);
-  border-color: #f2813f;
-  color: #f2813f;
+  background-color: rgba(243, 115, 39, 0.06);
+  border-color: #f4813d;
+  color: #f4813d;
 }
 .kuma-button-outline:active {
-  background-color: rgba(242, 113, 39, 0.1);
-  border-color: #f2620f;
-  color: #f2620f;
+  background-color: rgba(243, 115, 39, 0.1);
+  border-color: #e76d25;
+  color: #e76d25;
 }
 .kuma-button-secondary {
   background-color: #ffffff;
@@ -2479,38 +2479,59 @@ h2 {
   padding: 10px;
   display: inline-block;
 }
+.ghost_button_box {
+  background: rgba(243, 115, 39, 0.2);
+}
 .color {
-  width: 60px;
-  height: 60px;
-  display: inline-block;
-  margin: 0 20px 0 0;
+  width: 150px;
+  height: 30px;
   text-align: center;
-  line-height: 60px;
-  border-radius: 5px;
+  line-height: 30px;
 }
 .color.B_1 {
   background: #f37327;
 }
 .color.B_2 {
-  background: #f2813f;
+  background: #f4813d;
 }
 .color.B_3 {
-  background: #f2620f;
+  background: #e76d25;
 }
 .color.B_4 {
-  background: #d96523;
+  background: #db6823;
+}
+.color.B_5 {
+  background: #c25c1f;
+}
+.color.B_6 {
+  background: #924517;
+}
+.color.B_7 {
+  background: #6d3412;
+}
+.color.B1_2 {
+  background: rgba(243, 115, 39, 0.8);
 }
 .color.B1_3 {
-  background: rgba(242, 113, 39, 0.6);
+  background: rgba(243, 115, 39, 0.6);
+}
+.color.B1_4 {
+  background: rgba(243, 115, 39, 0.4);
+}
+.color.B1_5 {
+  background: rgba(243, 115, 39, 0.3);
 }
 .color.B1_6 {
-  background: rgba(242, 113, 39, 0.2);
+  background: rgba(243, 115, 39, 0.2);
 }
 .color.B1_7 {
-  background: rgba(242, 113, 39, 0.1);
+  background: rgba(243, 115, 39, 0.1);
 }
 .color.B1_8 {
-  background: rgba(242, 113, 39, 0.06);
+  background: rgba(243, 115, 39, 0.06);
+}
+.color.B1_9 {
+  background: rgba(243, 115, 39, 0.04);
 }
 .color.B1_1_D {
   background: #f06a1d;

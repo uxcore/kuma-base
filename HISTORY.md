@@ -1,5 +1,9 @@
 # history
 
+## 1.8.0
+
+* `CHANHED` new color generation rule
+
 ## 1.7.2
 
 * `FIXED` duplicated input definition 

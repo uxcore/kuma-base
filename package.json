@@ -23,11 +23,11 @@
     "gulp-ejs": "^3.0.0",
     "gulp-less": "^3.0.5",
     "gulp-rename": "^1.2.2",
-    "object-assign": "^4.1.1",
     "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-functions": "^1.0.0",
     "less-plugin-glob": "^1.1.1",
-    "less-plugin-inline-urls": "~1.1.0"
+    "less-plugin-inline-urls": "~1.1.0",
+    "object-assign": "^4.1.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
