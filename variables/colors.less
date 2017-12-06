@@ -126,30 +126,38 @@
 
 // F1-1
 @brand-danger:          #F04631; 
+// F1-2 (10% white)
+@brand-danger-hover:    rgba2rgb(@brand-danger, rgba(255, 255, 255, 0.10));
+// F1-3 (5% black)
+@brand-danger-focus:    rgba2rgb(@brand-danger, rgba(0, 0, 0, 0.05));
 // F2-1
 @brand-warning:         #FABD0E; 
 // F3-1
 @brand-success:         #66bc5c; 
 // F4-1
 @brand-link:            #3C99D8;
+// F4-2
+@brand-link-hover:      #2E76A6;
 
 // F1-1-7 A10
-@brand-danger-alpha-7:  hsva(round(hsvhue(@brand-danger)), round(hsvsaturation(@brand-danger)), round(hsvvalue(@brand-danger)), 0.1);
+@brand-danger-alpha-7:  fadeout(@brand-danger, 90%);
 // F1-1-8 A6 
-@brand-danger-alpha-8:  hsva(round(hsvhue(@brand-danger)), round(hsvsaturation(@brand-danger)), round(hsvvalue(@brand-danger)), 0.06);  
+@brand-danger-alpha-8:  fadeout(@brand-danger, 94%);  
+// F2-1-2 A80
+@brand-warning-alpha-2: fadeout(@brand-warning, 20%);
 // F2-1-7 A10
-@brand-warning-alpha-7: hsva(round(hsvhue(@brand-warning)), round(hsvsaturation(@brand-warning)), round(hsvvalue(@brand-warning)), 0.1);
+@brand-warning-alpha-7: fadeout(@brand-warning, 90%);
 // F3-1-2 A80
-@brand-success-alpha-2: hsva(round(hsvhue(@brand-success)), round(hsvsaturation(@brand-success)), round(hsvvalue(@brand-success)), 0.8);
+@brand-success-alpha-2: fadeout(@brand-success, 20%);
 // F3-1-7 A10
-@brand-success-alpha-7: hsva(round(hsvhue(@brand-success)), round(hsvsaturation(@brand-success)), round(hsvvalue(@brand-success)), 0.1);
+@brand-success-alpha-7: fadeout(@brand-success, 90%);
 // F4-1-7 A10
-@brand-link-alpha-7:    hsva(round(hsvhue(@brand-link)), round(hsvsaturation(@brand-link)), round(hsvvalue(@brand-link)), 0.1);
+@brand-link-alpha-7:    fadeout(@brand-link, 90%);
 
 // 链接色
 @link-color:            @brand-link; // F4-1 
-@link-hover-color:      #2E76A6; // F4-2
-@link-active-color:     #2E76A6; // F4-2
+@link-hover-color:      @brand-link-hover; // F4-2
+@link-active-color:     @brand-link-hover; // F4-2
 @link-visited-color:    @brand-link; // F4-1
 @link-disabled-color:   @normal-alpha-5; // N-5
 

@@ -2059,7 +2059,7 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .kuma-textarea.kuma-textarea-error,
 .kuma-input.kuma-input-error {
-  background-color: rgba(240, 70, 48, 0.06);
+  background-color: rgba(240, 70, 49, 0.06);
   border: 1px #F04631 solid;
 }
 .kuma-label {
@@ -2456,6 +2456,7 @@ a.weaker-link {
 }
 body {
   box-sizing: border-box;
+  padding: 24px;
 }
 body * {
   box-sizing: border-box;
@@ -2482,11 +2483,18 @@ h2 {
 .ghost_button_box {
   background: rgba(243, 115, 39, 0.2);
 }
+.color_box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+}
 .color {
   width: 150px;
   height: 30px;
   text-align: center;
   line-height: 30px;
+  border-radius: 3px;
+  margin-bottom: 4px;
 }
 .color.B_1 {
   background: #f37327;
@@ -2537,39 +2545,30 @@ h2 {
   background: #f06a1d;
 }
 .color.N_1 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: #1f3858;
 }
 .color.N_2 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.8);
 }
 .color.N_3 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.6);
 }
 .color.N_4 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.4);
 }
 .color.N_5 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.3);
 }
 .color.N_6 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.2);
 }
 .color.N_7 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.1);
 }
 .color.N_8 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.06);
 }
 .color.N_9 {
-  border: 1px solid rgba(31, 56, 88, 0.6);
   background: rgba(31, 56, 88, 0.04);
 }
 .color.D_1 {
@@ -2595,20 +2594,46 @@ h2 {
   background: rgba(255, 255, 255, 0.4);
 }
 .color.F1_1 {
-  border: 1px solid #dbdbdb;
   background: #F04631;
 }
 .color.F1_2 {
-  border: 1px solid #dbdbdb;
-  background: rgba(240, 70, 48, 0.1);
+  background: #f25946;
 }
 .color.F1_3 {
-  border: 1px solid #dbdbdb;
-  background: rgba(240, 70, 48, 0.06);
+  background: #e4432f;
+}
+.color.F1_1_7 {
+  background: rgba(240, 70, 49, 0.1);
+}
+.color.F1_1_8 {
+  background: rgba(240, 70, 49, 0.06);
 }
 .color.F2_1 {
-  border: 1px solid #dbdbdb;
+  background: #FABD0E;
+}
+.color.F2_1_2 {
+  background: rgba(250, 189, 14, 0.8);
+}
+.color.F2_1_7 {
+  background: rgba(250, 189, 14, 0.1);
+}
+.color.F3_1 {
   background: #66bc5c;
+}
+.color.F3_1_2 {
+  background: rgba(102, 188, 92, 0.8);
+}
+.color.F3_1_7 {
+  background: rgba(102, 188, 92, 0.1);
+}
+.color.F4_1 {
+  background: #3C99D8;
+}
+.color.F4_2 {
+  background: #2E76A6;
+}
+.color.F4_1_7 {
+  background: rgba(60, 153, 216, 0.1);
 }
 .shadow.S-1 {
   box-shadow: 0 1px 4px 0 rgba(31, 56, 88, 0.15);

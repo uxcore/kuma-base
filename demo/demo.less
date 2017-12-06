@@ -6,6 +6,7 @@
 
 body {
   box-sizing: border-box;
+  padding: 24px;
   & * {
     box-sizing: border-box;
   }
@@ -37,6 +38,12 @@ h2 {
   background: @brand-primary-alpha-6;
 }
 
+.color_box {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 24px;
+}
+
 .color {
   width: 150px;
   height: 30px;
@@ -44,7 +51,8 @@ h2 {
   // margin: 0 20px 0 0;
   text-align: center;
   line-height: 30px;
-  // border-radius: 5px;
+  border-radius: 3px;
+  margin-bottom: 4px;
   &.B_1 {
     background: @brand-primary;
   }
@@ -94,39 +102,30 @@ h2 {
     background: @brand-primary-dark;
   }
   &.N_1 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-1;
   }
   &.N_2 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-2;
   }
   &.N_3 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-3;
   }
   &.N_4 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-4;
   }
   &.N_5 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-5;
   }
   &.N_6 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-6;
   }
   &.N_7 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-7;
   }
   &.N_8 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-8;
   }
   &.N_9 {
-    border: 1px solid @normal-alpha-3;
     background: @normal-alpha-9;
   }
   &.D_1 {
@@ -152,20 +151,46 @@ h2 {
     background: @white-alpha-4;
   }
   &.F1_1 {
-    border: 1px solid @basic-700;
     background: @brand-danger;
   }
   &.F1_2 {
-    border: 1px solid @basic-700;
-    background: @brand-danger-alpha-7;
+    background: @brand-danger-hover;
   }
   &.F1_3 {
-    border: 1px solid @basic-700;
+    background: @brand-danger-focus;
+  }
+  &.F1_1_7 {
+    background: @brand-danger-alpha-7;
+  }
+  &.F1_1_8 {
     background: @brand-danger-alpha-8;
   }
   &.F2_1 {
-    border: 1px solid @basic-700;
+    background: @brand-warning;
+  }
+  &.F2_1_2 {
+    background: @brand-warning-alpha-2;
+  }
+  &.F2_1_7 {
+    background: @brand-warning-alpha-7;
+  }
+  &.F3_1 {
     background: @brand-success;
+  }
+  &.F3_1_2 {
+    background: @brand-success-alpha-2;
+  }
+  &.F3_1_7 {
+    background: @brand-success-alpha-7;
+  }
+  &.F4_1 {
+    background: @brand-link;
+  }
+  &.F4_2 {
+    background: @brand-link-hover;
+  }
+  &.F4_1_7 {
+    background: @brand-link-alpha-7;
   }
 }
 

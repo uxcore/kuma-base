@@ -1,5 +1,9 @@
 # history
 
+## 1.9.0
+
+* `NEW` add new function color
+
 ## 1.8.0
 
 * `CHANHED` new color generation rule
