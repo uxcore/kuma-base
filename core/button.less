@@ -46,6 +46,18 @@ a.kuma-button {
             border-color: @brand-primary-focus;
             color: @basic-100;
         }
+        &.kuma-button-danger {
+            background: @brand-danger;
+            border-color: @brand-danger;
+            &:hover {
+                background: @brand-danger-hover;
+                border-color: @brand-danger-hover;
+            }
+            &:active {
+                background: @brand-danger-focus;
+                border-color: @brand-danger-focus;
+            }
+        }
     }
     &-outline {
         background-color: @basic-100;
@@ -65,6 +77,20 @@ a.kuma-button {
             background-color: @brand-primary-alpha-7;
             border-color: @brand-primary-focus;
             color: @brand-primary-focus;
+        }
+        &.kuma-button-danger {
+            border-color: @brand-danger;
+            color: @brand-danger;
+            &:hover {
+                background: @brand-danger-alpha-8;
+                border-color: @brand-danger-hover;
+                color: @brand-danger-hover;
+            }
+            &:active {
+                background: @brand-danger-alpha-7;
+                border-color: @brand-danger-focus;
+                color: @brand-danger-focus;
+            }
         }
     }
     &-secondary {
@@ -86,24 +112,19 @@ a.kuma-button {
             color: @normal-alpha-1;
 
         }
-    }
-    
-    &-disabled {
-        background-color: @normal-alpha-9;
-        border-color: @normal-alpha-6;
-        color: @normal-alpha-5;
-        
-        cursor: not-allowed;
-
-        &:visited {
-        	background-color: @normal-alpha-9;
-        	border-color: @normal-alpha-6;
-        }
-        
-        &:hover, &:active {
-        	background-color: @normal-alpha-9;
-        	border-color: @normal-alpha-6;
-            color: @normal-alpha-5;
+        &.kuma-button-danger {
+            border-color: @brand-danger;
+            color: @brand-danger;
+            &:hover {
+                background: @brand-danger-alpha-8;
+                border-color: @brand-danger-hover;
+                color: @brand-danger-hover;
+            }
+            &:active {
+                background: @brand-danger-alpha-7;
+                border-color: @brand-danger-focus;
+                color: @brand-danger-focus;
+            }
         }
     }
     
@@ -111,6 +132,17 @@ a.kuma-button {
         background-color: transparent;
         &.kuma-button-disabled {
             background-color: @normal-alpha-9;
+            border-color: @normal-alpha-6;
+            color: @normal-alpha-5;
+            &:hover, &:active {
+                background-color: @normal-alpha-9;
+                border-color: @normal-alpha-6;
+                color: @normal-alpha-5;
+            }
+            &:visited {
+                background-color: @normal-alpha-9;
+                border-color: @normal-alpha-6;
+            }
         }
     }
 
@@ -132,6 +164,25 @@ a.kuma-button {
             border-color: @white-alpha-5;
             background-color: @white-alpha-7;
             color: @white-alpha-5;
+        }
+    }
+
+    &-disabled {
+        background-color: @normal-alpha-9;
+        border-color: @normal-alpha-6;
+        color: @normal-alpha-5;
+        
+        cursor: not-allowed;
+
+        &:visited {
+        	background-color: @normal-alpha-9;
+        	border-color: @normal-alpha-6;
+        }
+        
+        &:hover, &:active {
+        	background-color: @normal-alpha-9;
+        	border-color: @normal-alpha-6;
+            color: @normal-alpha-5;
         }
     }
 

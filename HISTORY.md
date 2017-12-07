@@ -1,5 +1,9 @@
 # history
 
+## 1.10.0
+
+* `NEW` add danger button
+
 ## 1.9.0
 
 * `NEW` add new function color
