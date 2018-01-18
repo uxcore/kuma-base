@@ -2035,7 +2035,7 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-input,
 .kuma-textarea {
   width: 100%;
-  border: 1px solid #BAC3CC;
+  border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.8);
@@ -2045,39 +2045,39 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-textarea[readonly],
 .kuma-input[disabled],
 .kuma-textarea[disabled] {
-  border: 1px solid #D1D7DE;
+  border: 1px solid #d2d7de;
   background: rgba(31, 56, 88, 0.04);
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input:hover,
 .kuma-textarea:hover {
-  border: 1px #A3AEBD solid;
+  border: 1px #a5afbc solid;
 }
 .kuma-input:hover[readonly],
 .kuma-textarea:hover[readonly],
 .kuma-input:hover[disabled],
 .kuma-textarea:hover[disabled] {
-  border: 1px solid #D1D7DE;
+  border: 1px solid #d2d7de;
 }
 .kuma-input:focus,
 .kuma-textarea:focus {
-  border: 1px #77879C solid;
+  border: 1px #79889b solid;
   outline: none;
 }
 .kuma-input:focus[readonly],
 .kuma-textarea:focus[readonly],
 .kuma-input:focus[disabled],
 .kuma-textarea:focus[disabled] {
-  border: 1px solid #D1D7DE;
+  border: 1px solid #d2d7de;
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-input.kuma-input-hover,
 .kuma-textarea.kuma-input-hover {
-  border: 1px #A3AEBD solid;
+  border: 1px #a5afbc solid;
 }
 .kuma-input.kuma-input-focus,
 .kuma-textarea.kuma-input-focus {
-  border: 1px #77879C solid;
+  border: 1px #79889b solid;
   outline: none;
 }
 .kuma-input::-webkit-input-placeholder,
@@ -2262,7 +2262,7 @@ a.weaker-link {
   height: 28px;
   padding: 0 15px;
   line-height: 26px;
-  border: solid 1px #BAC3CC;
+  border: solid 1px #bcc3cd;
   border-radius: 3px;
   box-sizing: border-box;
   color: rgba(31, 56, 88, 0.6);
@@ -2291,7 +2291,7 @@ a.weaker-link {
 .kuma-tag-group .kuma-tag-left {
   display: inline-block;
   padding: 0 10px;
-  border-right: solid 1px #BAC3CC;
+  border-right: solid 1px #bcc3cd;
   font-size: 12px;
 }
 .kuma-tag-group .kuma-tag-right {
@@ -2375,16 +2375,16 @@ a.weaker-link {
   border-color: #24bee8;
 }
 .border-color {
-  border-color: #BAC3CC;
+  border-color: #bcc3cd;
 }
 .border-hover-color {
-  border-color: #A3AEBD;
+  border-color: #a5afbc;
 }
 .border-focus-color {
-  border-color: #77879C;
+  border-color: #79889b;
 }
 .border-disabled-color {
-  border-color: #D1D7DE;
+  border-color: #d2d7de;
 }
 .border-danger-color {
   border-color: #F04631;
@@ -2622,6 +2622,33 @@ h2 {
 }
 .color.N_9 {
   background: rgba(31, 56, 88, 0.04);
+}
+.color.NA_1 {
+  background: #1f3858;
+}
+.color.NA_2 {
+  background: #4c6079;
+}
+.color.NA_3 {
+  background: #79889b;
+}
+.color.NA_4 {
+  background: #a5afbc;
+}
+.color.NA_5 {
+  background: #bcc3cd;
+}
+.color.NA_6 {
+  background: #d2d7de;
+}
+.color.NA_7 {
+  background: #e9ebee;
+}
+.color.NA_8 {
+  background: #f2f3f5;
+}
+.color.NA_9 {
+  background: #f6f7f8;
 }
 .color.D_1 {
   background: #000000;

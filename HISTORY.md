@@ -1,5 +1,9 @@
 # history
 
+## 1.10.1
+
+* `NEW` add new colors @normal-xxx
+
 ## 1.10.0
 
 * `NEW` add danger button
