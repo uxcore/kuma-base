@@ -1,5 +1,9 @@
 # history
 
+## 1.11.0
+
+* `CHANGED` new loading icon
+
 ## 1.10.1
 
 * `NEW` add new colors @normal-xxx
