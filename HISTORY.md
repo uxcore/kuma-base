@@ -1,5 +1,9 @@
 # history
 
+## 1.12.0
+
+* `NEW` add new logo
+
 ## 1.11.0
 
 * `CHANGED` new loading icon
