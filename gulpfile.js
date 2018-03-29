@@ -27,7 +27,7 @@ const prevHue = 'hsvhue(@brand-primary)';
 const prevSat = 'hsvsaturation(@brand-primary)'
 const prevValue = 'hsvvalue(@brand-primary)';
 const prevColors = {
-  brandPrimary: '#f37327',
+  brandPrimary: '#ff6f00',
 }
 
 const themes = [
@@ -38,7 +38,7 @@ const themes = [
   {
     name: 'blue',
     color: assign({}, prevColors, {
-      brandPrimary: '#498EE6',
+      brandPrimary: '#0079F2',
     }),
   },
   {

@@ -1,5 +1,9 @@
 # history
 
+## 1.13.0
+
+* `CHANGED` orange & blue brand primary color change
+
 ## 1.12.0
 
 * `NEW` add new logo
