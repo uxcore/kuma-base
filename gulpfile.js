@@ -88,7 +88,7 @@ const themes = [
 const colors = [{
   prefix: 'brand',
   name: ['primary'],
-  affix: ['', 'dark-2', 'dark-3', 'dark-4', 'dark-5', 'dark-5', 'dark-6', 'dark-7',
+  affix: ['', 'hover', 'focus', 'dark-4', 'dark-5', 'dark-5', 'dark-6', 'dark-7',
   'alpha-2', 'alpha-3', 'alpha-4', 'alpha-5', 'alpha-6', 'alpha-7', 'alpha-8', 'alpha-9']
 }, {
   prefix: ['normal', 'dark', 'white'],
@@ -96,8 +96,16 @@ const colors = [{
   affix: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
 }, {
   prefix: 'brand',
+  name: ['danger', 'warning', 'success', 'link', 'info', 'query'],
+  affix: ['']
+}, {
+  prefix: 'brand',
   name: ['danger', 'warning', 'success', 'link'],
   affix: ['', 'alpha-2', 'alpha-7', 'alpha-8'],
+}, {
+  prefix: 'brand',
+  name: ['danger'],
+  affix: ['hover', 'focus'],
 }];
 
 const generateColors = (colors) => {
@@ -109,7 +117,10 @@ const generateColors = (colors) => {
     prefix.forEach((p) => {
       name.forEach((n) => {
         affix.forEach((a) => {
-          vars.push(`${p}-${n}${a && '-' + a}`)
+          vars.push({
+            className: `${p === 'brand' ? '' : p + '-'}${n}${a && '-' + a}`,
+            colorName: `${p}-${n}${a && '-' + a}`
+          })
         })
       })
     })
@@ -118,7 +129,7 @@ const generateColors = (colors) => {
 }
 
 gulp.task('makefiles', function () {
-  gulp.src(['./templates/text-color.less'])
+  gulp.src(['./templates/text-color.less', './templates/background-color.less', './templates/border-color.less'])
     .pipe(ejs({
       colors: generateColors(colors),
     }))

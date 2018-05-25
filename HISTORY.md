@@ -124,6 +124,10 @@
 
 * `FIXED` input readonly/disabled text color
 
+## 1.14.0
+
+* `NEW` auto generate atom class for border/background/text
+
 ## 1.2.0
 
 * `CHANGED` new basic color defination (brand-color/functional-color/normal-color)
