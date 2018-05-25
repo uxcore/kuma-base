@@ -9,6 +9,7 @@ a.kuma-button {
     text-decoration: none;
     &.kuma-button-disabled {
         &:hover,
+        &:focus,
         &:visited {
             color: @normal-alpha-5;
         }
@@ -36,7 +37,8 @@ a.kuma-button {
             color: @basic-100;
         }
         
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: @brand-primary-hover;
             border-color: @brand-primary-hover;
             color: @basic-100;
@@ -49,7 +51,8 @@ a.kuma-button {
         &.kuma-button-danger {
             background: @brand-danger;
             border-color: @brand-danger;
-            &:hover {
+            &:hover,
+            &:focus {
                 background: @brand-danger-hover;
                 border-color: @brand-danger-hover;
             }
@@ -68,7 +71,8 @@ a.kuma-button {
             color: @brand-primary;
         }
         
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: @brand-primary-alpha-8;
             border-color: @brand-primary-hover;
             color: @brand-primary-hover;
@@ -81,7 +85,8 @@ a.kuma-button {
         &.kuma-button-danger {
             border-color: @brand-danger;
             color: @brand-danger;
-            &:hover {
+            &:hover,
+            &:focus {
                 background: @brand-danger-alpha-8;
                 border-color: @brand-danger-hover;
                 color: @brand-danger-hover;
@@ -102,7 +107,8 @@ a.kuma-button {
             color: @normal-alpha-3;
         }
         
-        &:hover {
+        &:hover,
+        &:focus {
             border-color: @normal-alpha-3;
             background-color: @normal-alpha-8;
         }
@@ -115,7 +121,8 @@ a.kuma-button {
         &.kuma-button-danger {
             border-color: @brand-danger;
             color: @brand-danger;
-            &:hover {
+            &:hover,
+            &:focus {
                 background: @brand-danger-alpha-8;
                 border-color: @brand-danger-hover;
                 color: @brand-danger-hover;
@@ -134,7 +141,7 @@ a.kuma-button {
             background-color: @normal-alpha-9;
             border-color: @normal-alpha-6;
             color: @normal-alpha-5;
-            &:hover, &:active {
+            &:hover, &:focus, &:active {
                 background-color: @normal-alpha-9;
                 border-color: @normal-alpha-6;
                 color: @normal-alpha-5;
@@ -152,7 +159,8 @@ a.kuma-button {
         &:visited {
             color: @white-alpha-1;
         }
-        &:hover {
+        &:hover,
+        &:focus {
             border-color: @white-alpha-2;
             background-color: @white-alpha-8;
             color: @white-alpha-2;
@@ -179,7 +187,7 @@ a.kuma-button {
         	border-color: @normal-alpha-6;
         }
         
-        &:hover, &:active {
+        &:hover, &:focus ,&:active {
         	background-color: @normal-alpha-9;
         	border-color: @normal-alpha-6;
             color: @normal-alpha-5;

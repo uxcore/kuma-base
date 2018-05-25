@@ -83,9 +83,46 @@ const themes = [
       brandPrimary: '#2eb6a9',
     }),
   },
-]
+];
+
+const colors = [{
+  prefix: 'brand',
+  name: ['primary'],
+  affix: ['', 'dark-2', 'dark-3', 'dark-4', 'dark-5', 'dark-5', 'dark-6', 'dark-7',
+  'alpha-2', 'alpha-3', 'alpha-4', 'alpha-5', 'alpha-6', 'alpha-7', 'alpha-8', 'alpha-9']
+}, {
+  prefix: ['normal', 'dark', 'white'],
+  name: ['alpha'],
+  affix: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+}, {
+  prefix: 'brand',
+  name: ['danger', 'warning', 'success', 'link'],
+  affix: ['', 'alpha-2', 'alpha-7', 'alpha-8'],
+}];
+
+const generateColors = (colors) => {
+  const vars = [];
+  colors.forEach((item) => {
+    const prefix = Array.isArray(item.prefix) ? item.prefix : [item.prefix];
+    const name = Array.isArray(item.name) ? item.name : [item.name];
+    const affix = Array.isArray(item.affix) ? item.affix : [item.affix];
+    prefix.forEach((p) => {
+      name.forEach((n) => {
+        affix.forEach((a) => {
+          vars.push(`${p}-${n}${a && '-' + a}`)
+        })
+      })
+    })
+  });
+  return vars;
+}
 
 gulp.task('makefiles', function () {
+  gulp.src(['./templates/text-color.less'])
+    .pipe(ejs({
+      colors: generateColors(colors),
+    }))
+    .pipe(gulp.dest('./core'));
   themes.forEach((theme) => {
     gulp.src('./templates/theme.less')
       .pipe(ejs(theme))

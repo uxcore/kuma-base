@@ -57,10 +57,13 @@
 @brand-primary:         #498EE6; 
 // B2 (10% white)
 @brand-primary-hover: rgba2rgb(@brand-primary, rgba(255, 255, 255, 0.10));
+@brand-primary-dark-2: @brand-primary-hover;
 // B3 (5% black)
 @brand-primary-focus: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.05));
+@brand-primary-dark-3: @brand-primary-focus;
 // B4 (10% black)
 @brand-primary-dark-new: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.10));
+@brand-primary-dark-4: @brand-primary-dark-new;
 // B5 (20% black)
 @brand-primary-dark-5: rgba2rgb(@brand-primary, rgba(0, 0, 0, 0.20));
 // B6 (40% black)
@@ -128,6 +131,7 @@
 @white-alpha-6:             rgba(255, 255, 255, 0.2); // W-6 A20 
 @white-alpha-7:             rgba(255, 255, 255, 0.1); // W-7 A10 
 @white-alpha-8:             rgba(255, 255, 255, 0.06); // W-8 A6 
+@white-alpha-9:             rgba(255, 255, 255, 0.04); // W-8 A6 
 
 // F1-1
 @brand-danger:          #F04631; 
@@ -144,6 +148,8 @@
 // F4-2
 @brand-link-hover:      #2E76A6;
 
+// F1-1-2 A10
+@brand-danger-alpha-2:  fadeout(@brand-danger, 20%);
 // F1-1-7 A10
 @brand-danger-alpha-7:  fadeout(@brand-danger, 90%);
 // F1-1-8 A6 
@@ -152,12 +158,20 @@
 @brand-warning-alpha-2: fadeout(@brand-warning, 20%);
 // F2-1-7 A10
 @brand-warning-alpha-7: fadeout(@brand-warning, 90%);
+// F2-1-8 A6 
+@brand-warning-alpha-8:  fadeout(@brand-warning, 94%);  
 // F3-1-2 A80
 @brand-success-alpha-2: fadeout(@brand-success, 20%);
 // F3-1-7 A10
 @brand-success-alpha-7: fadeout(@brand-success, 90%);
+// F3-1-8 A6 
+@brand-success-alpha-8:  fadeout(@brand-success, 94%); 
+// F4-1-2 A10
+@brand-link-alpha-2:  fadeout(@brand-link, 20%);
 // F4-1-7 A10
 @brand-link-alpha-7:    fadeout(@brand-link, 90%);
+// F4-1-8 A6 
+@brand-link-alpha-8:  fadeout(@brand-link, 94%); 
 
 // 链接色
 @link-color:            @brand-link; // F4-1 

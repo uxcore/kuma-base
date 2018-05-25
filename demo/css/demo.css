@@ -465,6 +465,7 @@ a.kuma-button {
   text-decoration: none;
 }
 a.kuma-button.kuma-button-disabled:hover,
+a.kuma-button.kuma-button-disabled:focus,
 a.kuma-button.kuma-button-disabled:visited {
   color: rgba(31, 56, 88, 0.3);
 }
@@ -488,7 +489,8 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-button-primary:visited {
   color: #fff;
 }
-.kuma-button-primary:hover {
+.kuma-button-primary:hover,
+.kuma-button-primary:focus {
   background-color: #1a86f3;
   border-color: #1a86f3;
   color: #fff;
@@ -502,7 +504,8 @@ a.kuma-button.kuma-button-disabled:visited {
   background: #F04631;
   border-color: #F04631;
 }
-.kuma-button-primary.kuma-button-danger:hover {
+.kuma-button-primary.kuma-button-danger:hover,
+.kuma-button-primary.kuma-button-danger:focus {
   background: #f25946;
   border-color: #f25946;
 }
@@ -518,7 +521,8 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-button-outline:visited {
   color: #0079F2;
 }
-.kuma-button-outline:hover {
+.kuma-button-outline:hover,
+.kuma-button-outline:focus {
   background-color: rgba(0, 121, 242, 0.06);
   border-color: #1a86f3;
   color: #1a86f3;
@@ -532,7 +536,8 @@ a.kuma-button.kuma-button-disabled:visited {
   border-color: #F04631;
   color: #F04631;
 }
-.kuma-button-outline.kuma-button-danger:hover {
+.kuma-button-outline.kuma-button-danger:hover,
+.kuma-button-outline.kuma-button-danger:focus {
   background: rgba(240, 70, 49, 0.06);
   border-color: #f25946;
   color: #f25946;
@@ -550,7 +555,8 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-button-secondary:visited {
   color: rgba(31, 56, 88, 0.6);
 }
-.kuma-button-secondary:hover {
+.kuma-button-secondary:hover,
+.kuma-button-secondary:focus {
   border-color: rgba(31, 56, 88, 0.6);
   background-color: rgba(31, 56, 88, 0.06);
 }
@@ -563,7 +569,8 @@ a.kuma-button.kuma-button-disabled:visited {
   border-color: #F04631;
   color: #F04631;
 }
-.kuma-button-secondary.kuma-button-danger:hover {
+.kuma-button-secondary.kuma-button-danger:hover,
+.kuma-button-secondary.kuma-button-danger:focus {
   background: rgba(240, 70, 49, 0.06);
   border-color: #f25946;
   color: #f25946;
@@ -582,6 +589,7 @@ a.kuma-button.kuma-button-disabled:visited {
   color: rgba(31, 56, 88, 0.3);
 }
 .kuma-button-ghost.kuma-button-disabled:hover,
+.kuma-button-ghost.kuma-button-disabled:focus,
 .kuma-button-ghost.kuma-button-disabled:active {
   background-color: rgba(31, 56, 88, 0.04);
   border-color: rgba(31, 56, 88, 0.2);
@@ -598,7 +606,8 @@ a.kuma-button.kuma-button-disabled:visited {
 .kuma-button-white:visited {
   color: #ffffff;
 }
-.kuma-button-white:hover {
+.kuma-button-white:hover,
+.kuma-button-white:focus {
   border-color: rgba(255, 255, 255, 0.8);
   background-color: rgba(255, 255, 255, 0.06);
   color: rgba(255, 255, 255, 0.8);
@@ -622,6 +631,7 @@ a.kuma-button.kuma-button-disabled:visited {
   border-color: rgba(31, 56, 88, 0.2);
 }
 .kuma-button-disabled:hover,
+.kuma-button-disabled:focus,
 .kuma-button-disabled:active {
   background-color: rgba(31, 56, 88, 0.04);
   border-color: rgba(31, 56, 88, 0.2);
