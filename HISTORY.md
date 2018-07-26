@@ -1,5 +1,9 @@
 # history
 
+## 1.15.0
+
+* `CHANGED` support js vars export
+
 ## 1.13.0
 
 * `CHANGED` orange & blue brand primary color change

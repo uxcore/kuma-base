@@ -19,21 +19,11 @@
 
 > 分类：信息提示类 、连接色类。用于UI设计中需要引起注意的设计。如：流程中的进度、提醒、成功等。
 
-##### 信息提示色
-
-##### 链接色
-
-##### 文本色
-
-更多的颜色定义的变量请查看 variables/colors
 
 ### 关于上一个版本的 kuma 兼容
 
 老版本中的变量在新版本中保留，保存在 memories 目录下，开发人员在开发新的变量时，请注意核对是否冲突。
 
-### 主题
-
-内置两款主题：`橙色系` 和 `蓝色系`
 
 ## 如何开发
 
@@ -41,5 +31,5 @@
 git clone git@github.com:uxcore/kuma-base.git
 cd kuma-base
 npm install
-gulp
+npm start
 ```

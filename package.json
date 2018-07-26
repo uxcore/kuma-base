@@ -1,11 +1,11 @@
 {
   "name": "kuma-base",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "base for kuma",
   "main": "index.js",
   "scripts": {
     "start": "gulp makefiles &  gulp",
-    "pub": "gulp makefiles & npm publish"
+    "pub": "gulp makefiles & gulp js-vars & npm publish"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
     "less-plugin-functions": "^1.0.0",
     "less-plugin-glob": "^1.1.1",
     "less-plugin-inline-urls": "~1.1.0",
-    "object-assign": "^4.1.1"
+    "less-vars-to-js": "^1.2.1",
+    "object-assign": "^4.1.1",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {}
 }

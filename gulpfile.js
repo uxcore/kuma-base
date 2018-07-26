@@ -4,10 +4,13 @@ const connect = require('gulp-connect');
 const ejs = require('gulp-ejs');
 const rename = require('gulp-rename');
 const assign = require('object-assign');
+const Less = require('less');
+const rimraf = require('rimraf');
 
 const LessPluginAutoPrefix = require('less-plugin-autoprefix');
 const LessPluginInlineUrls = require('less-plugin-inline-urls');
 const LessPluginFunctions = require('less-plugin-functions');
+const fs = require('fs');
 const autoprefixPlugin = new LessPluginAutoPrefix({
   browsers: [
     '> 5%',
@@ -89,7 +92,7 @@ const colors = [{
   prefix: 'brand',
   name: ['primary'],
   affix: ['', 'hover', 'focus', 'dark-4', 'dark-5', 'dark-5', 'dark-6', 'dark-7',
-  'alpha-2', 'alpha-3', 'alpha-4', 'alpha-5', 'alpha-6', 'alpha-7', 'alpha-8', 'alpha-9']
+    'alpha-2', 'alpha-3', 'alpha-4', 'alpha-5', 'alpha-6', 'alpha-7', 'alpha-8', 'alpha-9']
 }, {
   prefix: ['normal', 'dark', 'white'],
   name: ['alpha'],
@@ -171,3 +174,61 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['server', 'watch', 'dev-less']);
+
+const getVariablesFromLess = (files = []) => {
+  const lessVariables = {};
+  files.forEach((file) => {
+    const filePath = `./variables/${file}.less`;
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const matches = fileContent.match(/@(.+):/g);
+    matches.forEach((item) => {
+      lessVariables[item.replace(/[:@]/g, '')] = true;
+    })
+  });
+  return lessVariables;
+}
+
+const getThemes = () => {
+  const files = fs.readdirSync('./theme');
+  return files.map(file => file.replace('.less', ''));
+}
+
+gulp.task('js-vars', function () {
+  const vars = getVariablesFromLess(['border', 'colors', 'shadow', 'size', 'transition']);
+  let themeFinished = 0;
+  const themes = getThemes();
+  themes.forEach((theme) => {
+    gulp.src('./templates/extract-vars.less')
+      .pipe(ejs({
+        vars: Object.keys(vars),
+        theme: theme,
+      }))
+      .pipe(less(lessDevConfig))
+      .pipe(rename(`${theme}.css`))
+      .pipe(gulp.dest('./jsvars'))
+      .on('end', function () {
+        themeFinished += 1;
+        if (themeFinished === themes.length) {
+          themes.forEach((th) => {
+            const cssFile = fs.readFileSync(`./jsvars/${th}.css`, 'utf8');
+            const matches = cssFile.match(/\.(.+) {\n\s+color: (.+)\n}/g);
+            const varsArr = [];
+            matches.forEach((match) => {
+              match.replace(/\.(.+) {\n\s+color: (.+);\n}/, (match, $1, $2) => {
+                varsArr.push({ key: `@${$1}`, value: $2 })
+              })
+            });
+            gulp.src('./templates/extract-vars.js')
+              .pipe(ejs({
+                vars: varsArr
+              }))
+              .pipe(rename(`${th}.js`))
+              .pipe(gulp.dest('./jsvars'))
+              .on('end', () => {
+                rimraf(`./jsvars/${th}.css`, () => { });
+              });
+          })
+        }
+      })
+  });
+});
