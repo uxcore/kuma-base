@@ -194,7 +194,7 @@ const getThemes = () => {
 }
 
 gulp.task('js-vars', function () {
-  const vars = getVariablesFromLess(['border', 'colors', 'shadow', 'size', 'transition']);
+  const vars = getVariablesFromLess(['border', 'colors', 'shadow', 'size', 'transition', 'typography']);
   let themeFinished = 0;
   const themes = getThemes();
   themes.forEach((theme) => {

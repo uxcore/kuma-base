@@ -131,4 +131,5 @@ module.exports = {
   '@transition-duration': '0.3s',
   '@transition-ease': 'cubic-bezier(0.23, 1, 0.32, 1)',
   '@transition-delay': '0s',
+  '@base-font': '&#39;Helvetica Neue&#39;, Helvetica, &#39;PingFang SC&#39;, &#39;Hiragino Sans GB&#39;, &#39;Microsoft YaHei&#39;, Arial, sans-serif',
 };
