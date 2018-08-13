@@ -1,5 +1,9 @@
 # history
 
+## 1.16.0
+
+* `CHANEGD` move `grid.less` `mediaquery.less` to `mixin` folder
+
 ## 1.15.0
 
 * `CHANGED` support js vars export
