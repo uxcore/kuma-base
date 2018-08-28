@@ -33,3 +33,8 @@ cd kuma-base
 npm install
 npm start
 ```
+
+## 如何发布
+
+* 修改 package.json 版本号
+* 执行 `npm run pub`

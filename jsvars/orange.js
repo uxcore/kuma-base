@@ -132,5 +132,5 @@ module.exports = {
   "@transition-ease": "cubic-bezier(0.23, 1, 0.32, 1)",
   "@transition-delay": "0s",
   "@base-font": "'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif",
-  "@svg-path": "'../core/svg/blue'",
+  "@svg-path": "'~kuma-base/core/svg/orange'",
 };
