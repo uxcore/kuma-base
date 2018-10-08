@@ -2114,15 +2114,15 @@ a.kuma-button.kuma-button-disabled:visited {
 }
 .kuma-input::-webkit-input-placeholder,
 .kuma-textarea::-webkit-input-placeholder {
-  color: rgba(31, 56, 88, 0.4) !important;
+  color: #a5afbc !important;
 }
 .kuma-input:-ms-input-placeholder,
 .kuma-textarea:-ms-input-placeholder {
-  color: rgba(31, 56, 88, 0.4) !important;
+  color: #a5afbc !important;
 }
 .kuma-input::placeholder,
 .kuma-textarea::placeholder {
-  color: rgba(31, 56, 88, 0.4) !important;
+  color: #a5afbc !important;
 }
 .kuma-input {
   padding: 5px 12px;
@@ -2153,7 +2153,7 @@ a.kuma-button.kuma-button-disabled:visited {
   padding-top: 5px;
   padding-right: 0px;
   text-align: right;
-  color: rgba(0, 0, 0, 0.6);
+  color: #666666;
   display: table-cell;
   vertical-align: baseline;
   vertical-align: -webkit-baseline-middle;
