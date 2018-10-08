@@ -3170,27 +3170,104 @@ h2 {
 .color.NA_9 {
   background: #f6f7f8;
 }
+.color.DA_1 {
+  background: #000000;
+  color: white;
+}
+.color.DA_2 {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.color.DA_3 {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.color.DA_4 {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.color.DA_5 {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.color.DA_6 {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.color.DA_7 {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.color.DA_8 {
+  background: rgba(0, 0, 0, 0.06);
+  color: white;
+}
+.color.DA_9 {
+  background: rgba(0, 0, 0, 0.04);
+  color: white;
+}
 .color.D_1 {
   background: #000000;
   color: white;
 }
 .color.D_2 {
-  background: rgba(0, 0, 0, 0.8);
+  background: #333333;
   color: white;
 }
 .color.D_3 {
-  background: rgba(0, 0, 0, 0.6);
+  background: #666666;
   color: white;
 }
 .color.D_4 {
-  background: rgba(0, 0, 0, 0.4);
+  background: #999999;
+  color: white;
+}
+.color.D_5 {
+  background: #b3b3b3;
+  color: white;
+}
+.color.D_6 {
+  background: #cccccc;
+  color: white;
+}
+.color.D_7 {
+  background: #e6e6e6;
+  color: white;
+}
+.color.D_8 {
+  background: #f0f0f0;
+  color: white;
+}
+.color.D_9 {
+  background: #f5f5f5;
   color: white;
 }
 .color.W_1 {
   background: #ffffff;
 }
 .color.W_2 {
+  background: rgba(255, 255, 255, 0.8);
+}
+.color.W_3 {
+  background: rgba(255, 255, 255, 0.6);
+}
+.color.W_4 {
   background: rgba(255, 255, 255, 0.4);
+}
+.color.W_5 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.color.W_6 {
+  background: rgba(255, 255, 255, 0.2);
+}
+.color.W_7 {
+  background: rgba(255, 255, 255, 0.1);
+}
+.color.W_8 {
+  background: rgba(255, 255, 255, 0.06);
+}
+.color.W_9 {
+  background: rgba(255, 255, 255, 0.04);
 }
 .color.F1_1 {
   background: #F04631;
