@@ -2070,7 +2070,7 @@ a.kuma-button.kuma-button-disabled:visited {
   border: 1px solid #bcc3cd;
   border-radius: 3px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #333333;
   box-sizing: border-box;
 }
 .kuma-input[readonly],
