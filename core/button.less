@@ -4,10 +4,12 @@
  * date  : 2016-01-22
 */
 
-a.kuma-button {
+@__buttonPrefixCls: kuma-button;
+
+a.@{__buttonPrefixCls} {
     display: inline-block;
     text-decoration: none;
-    &.kuma-button-disabled {
+    &.@{__buttonPrefixCls}-disabled {
         &:hover,
         &:focus,
         &:visited {
@@ -16,7 +18,7 @@ a.kuma-button {
     }
 }
 
-.kuma-button {
+.@{__buttonPrefixCls} {
     padding: 0 16px;
     height: 32px;
     border-width: 1px;
@@ -48,7 +50,7 @@ a.kuma-button {
             border-color: @brand-primary-focus;
             color: @basic-100;
         }
-        &.kuma-button-danger {
+        &.@{__buttonPrefixCls}-danger {
             background: @brand-danger;
             border-color: @brand-danger;
             &:hover,
@@ -82,7 +84,7 @@ a.kuma-button {
             border-color: @brand-primary-focus;
             color: @brand-primary-focus;
         }
-        &.kuma-button-danger {
+        &.@{__buttonPrefixCls}-danger {
             border-color: @brand-danger;
             color: @brand-danger;
             &:hover,
@@ -118,7 +120,7 @@ a.kuma-button {
             color: @normal-alpha-1;
 
         }
-        &.kuma-button-danger {
+        &.@{__buttonPrefixCls}-danger {
             border-color: @brand-danger;
             color: @brand-danger;
             &:hover,
@@ -137,7 +139,7 @@ a.kuma-button {
     
     &-ghost {
         background-color: transparent;
-        &.kuma-button-disabled {
+        &.@{__buttonPrefixCls}-disabled {
             background-color: @normal-alpha-9;
             border-color: @normal-alpha-6;
             color: @normal-alpha-5;
@@ -168,7 +170,7 @@ a.kuma-button {
         &:active {
             background: @white-alpha-7;
         }
-        &.kuma-button-disabled {
+        &.@{__buttonPrefixCls}-disabled {
             border-color: @white-alpha-5;
             background-color: @white-alpha-7;
             color: @white-alpha-5;
@@ -211,10 +213,10 @@ a.kuma-button {
     
     &-group {
         display: inline-block;
-        .kuma-button {
+        .@{__buttonPrefixCls} {
             margin: 0;
             float: left;
-            & + .kuma-button {
+            & + .@{__buttonPrefixCls} {
                 margin-left: -1px;
             }
             &:not(:first-child) {
