@@ -420,12 +420,10 @@ a:hover {
   white-space: nowrap;
 }
 .fn-linear {
-  background: -webkit-linear-gradient(#fcfcfc, #f1f1f1);
   background: linear-gradient(#fcfcfc, #f1f1f1);
 }
 /* 浅色的渐变 */
 .fn-linear-light {
-  background: -webkit-linear-gradient(#fcfcfc, #f9f9f9);
   background: linear-gradient(#fcfcfc, #f9f9f9);
 }
 /* 人民币符号 */
@@ -500,7 +498,6 @@ a.kuma-button.kuma-button-disabled:visited {
   font-size: 12px;
   line-height: 30px;
   box-sizing: border-box;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .kuma-button-primary {
@@ -2112,14 +2109,6 @@ a.kuma-button.kuma-button-disabled:visited {
   border: 1px #79889b solid;
   outline: none;
 }
-.kuma-input::-webkit-input-placeholder,
-.kuma-textarea::-webkit-input-placeholder {
-  color: #a5afbc !important;
-}
-.kuma-input:-ms-input-placeholder,
-.kuma-textarea:-ms-input-placeholder {
-  color: #a5afbc !important;
-}
 .kuma-input::placeholder,
 .kuma-textarea::placeholder {
   color: #a5afbc !important;
@@ -2971,11 +2960,9 @@ a.kuma-button.kuma-button-disabled:visited {
   fill: #24bee8;
 }
 .kuma-transition {
-  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .kuma-transition-all * {
-  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .aliwork-theme {

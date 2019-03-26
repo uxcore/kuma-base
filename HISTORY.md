@@ -1,5 +1,9 @@
 # history
 
+## 1.18.1
+
+* `CHANGED` use `__buttonPrefixCls` in button.less
+
 ## 1.17.2
 
 * `NEW` add @dark colors
