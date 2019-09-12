@@ -71,7 +71,7 @@ const themes = [
   {
     name: 'koubei',
     color: assign({}, prevColors, {
-      brandPrimary: '#e2470e',
+      brandPrimary: '#FF4C19',
     }),
   },
   {
