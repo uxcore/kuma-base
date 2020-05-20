@@ -1,5 +1,8 @@
 # history
 
+## 1.18.7
+* `CHANGED` ant_financial & mybank change primaryColor
+
 ## 1.18.1
 
 * `CHANGED` use `__buttonPrefixCls` in button.less

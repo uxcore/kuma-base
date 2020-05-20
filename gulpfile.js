@@ -59,7 +59,7 @@ const themes = [
   {
     name: 'ant_financial',
     color: assign({}, prevColors, {
-      brandPrimary: '#00a0e8',
+      brandPrimary: '#1677FF',
     }),
   },
   {
@@ -77,7 +77,7 @@ const themes = [
   {
     name: 'mybank',
     color: assign({}, prevColors, {
-      brandPrimary: '#00a3ab',
+      brandPrimary: '#00C2C2',
     }),
   },
   {
