@@ -1,5 +1,8 @@
 # history
 
+## 1.18.8
+* `CHANGED` ant 品牌升级
+
 ## 1.18.7
 * `CHANGED` ant_financial & mybank change primaryColor
 
