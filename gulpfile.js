@@ -86,6 +86,12 @@ const themes = [
       brandPrimary: '#2eb6a9',
     }),
   },
+	{
+		name: 'yida',
+		color: assign({}, prevColors, {
+			brandPrimary: '#0089FF',
+		}),
+	},
 ];
 
 const colors = [{
