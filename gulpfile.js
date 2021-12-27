@@ -92,6 +92,12 @@ const themes = [
 			brandPrimary: '#0089FF',
 		}),
 	},
+  {
+		name: 'procurement',
+		color: assign({}, prevColors, {
+			brandPrimary: '#0f5cff',
+		}),
+	},
 ];
 
 const colors = [{
